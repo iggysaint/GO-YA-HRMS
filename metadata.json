@@ -1,0 +1,6 @@
+{
+  "name": "Go-Ya HRMS",
+  "description": "A multi-tenant HR SaaS with Notion-inspired UI, multi-tenant RBAC, HR policy governance & review audit lifecycle tracking, employee engagement & pulse surveys with anonymous feedback, policy acknowledgement tracking, employee conduct & disciplinary tracker, probation management with reviews, performance reviews, organizational chart, workforce analytics, predictive attrition scoring, task workflows board, expense governance, company events management, real-time in-app notifications, internal real-time team chat, Gemini AI assistant, and Paystack billing & subscription management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

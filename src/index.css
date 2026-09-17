@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #FFFFFF;
+    --bg-surface: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-subtle: #F7F6F3;
+    --bg-input: #FFFFFF;
+    --bg-hover: #EFEFED;
+    --bg-active: #E8E7E4;
+    --bg-sidebar: #FBFBFA;
+    
+    --border-subtle: #E9E8E4;
+    --border-strong: #D3D1CB;
+    --border-hover: #C5C3BD;
+    
+    --text-primary: #37352F;
+    --text-secondary: #6B6966;
+    --text-tertiary: #8A8985;
+    --text-muted: #9B9A97;
+    --text-inverse: #FFFFFF;
+
+    --brand-primary: #2563EB;
+    --brand-primary-hover: #1D4ED8;
+    --accent-primary: #2563EB;
+    --accent-blue: #0B6BCB;
+    --accent-blue-subtle: #EBF3FB;
+    
+    --status-active-bg: #EAF5EA;
+    --status-active-text: #2B6E3F;
+    --status-active-dot: #3DA85A;
+
+    --status-probation-bg: #FFF4E5;
+    --status-probation-text: #965B00;
+    --status-probation-dot: #E08A00;
+
+    --status-leave-bg: #FFF4E5;
+    --status-leave-text: #965B00;
+    --status-leave-dot: #E08A00;
+
+    --status-offboarded-bg: #F1F1EF;
+    --status-offboarded-text: #787774;
+    --status-offboarded-dot: #9B9A97;
+
+    --risk-low-bg: #EAF5EA;
+    --risk-low-text: #2B6E3F;
+    --risk-low-dot: #3DA85A;
+
+    --risk-medium-bg: #FFF4E5;
+    --risk-medium-text: #965B00;
+    --risk-medium-dot: #E08A00;
+
+    --risk-high-bg: #FDE8E8;
+    --risk-high-text: #9C1414;
+    --risk-high-dot: #E53E3E;
+
+    --card-shadow: 0 1px 3px rgba(15, 15, 15, 0.04), 0 0 0 1px rgba(15, 15, 15, 0.06);
+    --popover-shadow: 0 4px 20px rgba(15, 15, 15, 0.09), 0 0 0 1px rgba(15, 15, 15, 0.06);
+  }
+
+  .dark {
+    --bg-primary: #191919;
+    --bg-surface: #202020;
+    --bg-card: #202020;
+    --bg-subtle: #262626;
+    --bg-input: #262626;
+    --bg-hover: #2F2F2F;
+    --bg-active: #383838;
+    --bg-sidebar: #1E1E1E;
+    
+    --border-subtle: #2F2F2F;
+    --border-strong: #404040;
+    --border-hover: #4A4A4A;
+    
+    --text-primary: #EDEDEB;
+    --text-secondary: #A5A5A2;
+    --text-tertiary: #8A8A85;
+    --text-muted: #73726E;
+    --text-inverse: #191919;
+
+    --brand-primary: #3B82F6;
+    --brand-primary-hover: #60A5FA;
+    --accent-primary: #3B82F6;
+    --accent-blue: #3E8BFF;
+    --accent-blue-subtle: rgba(62, 139, 255, 0.15);
+
+    --status-active-bg: rgba(61, 168, 90, 0.15);
+    --status-active-text: #69D087;
+    --status-active-dot: #48BB78;
+
+    --status-probation-bg: rgba(224, 138, 0, 0.15);
+    --status-probation-text: #F6AD55;
+    --status-probation-dot: #ED8936;
+
+    --status-leave-bg: rgba(224, 138, 0, 0.15);
+    --status-leave-text: #F6AD55;
+    --status-leave-dot: #ED8936;
+
+    --status-offboarded-bg: rgba(155, 154, 151, 0.15);
+    --status-offboarded-text: #A0AEC0;
+    --status-offboarded-dot: #718096;
+
+    --risk-low-bg: rgba(61, 168, 90, 0.15);
+    --risk-low-text: #69D087;
+    --risk-low-dot: #48BB78;
+
+    --risk-medium-bg: rgba(224, 138, 0, 0.15);
+    --risk-medium-text: #F6AD55;
+    --risk-medium-dot: #ED8936;
+
+    --risk-high-bg: rgba(229, 62, 62, 0.18);
+    --risk-high-text: #FC8181;
+    --risk-high-dot: #F56565;
+
+    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.08);
+    --popover-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Notion-like custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

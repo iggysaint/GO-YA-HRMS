@@ -1,0 +1,3493 @@
+{
+  "organizations": [
+    {
+      "id": "org_ghana_fintech_01",
+      "name": "Kora Innovations Ltd",
+      "industry": "Fintech & Payments",
+      "country": "Ghana",
+      "currency": "GHS",
+      "timezone": "Africa/Accra (GMT+0)",
+      "leave_escalation_threshold_days": 3,
+      "created_at": "2026-09-05T23:15:50.521Z"
+    },
+    {
+      "id": "org_goldkey_02",
+      "name": "GoldKey Agritech Ghana Ltd",
+      "industry": "Agri-Business & Export",
+      "country": "Ghana",
+      "currency": "GHS",
+      "timezone": "Africa/Accra (GMT+0)",
+      "leave_escalation_threshold_days": 3,
+      "created_at": "2024-02-10T10:00:00.000Z"
+    },
+    {
+      "id": "org_payswitch_03",
+      "name": "PaySwitch West Africa",
+      "industry": "Financial Technology",
+      "country": "Ghana",
+      "currency": "USD",
+      "timezone": "Africa/Accra (GMT+0)",
+      "leave_escalation_threshold_days": 5,
+      "created_at": "2024-03-01T12:00:00.000Z"
+    },
+    {
+      "id": "org_afrilog_04",
+      "name": "AfriLogistics Hub",
+      "industry": "Supply Chain & Freight",
+      "country": "Ghana",
+      "currency": "GHS",
+      "timezone": "Africa/Accra (GMT+0)",
+      "leave_escalation_threshold_days": 2,
+      "created_at": "2024-04-15T08:00:00.000Z"
+    }
+  ],
+  "organization_members": [
+    {
+      "user_id": "usr_hr_head_01",
+      "organization_id": "org_ghana_fintech_01",
+      "role": "hr_head"
+    },
+    {
+      "user_id": "usr_hr_analyst_01",
+      "organization_id": "org_ghana_fintech_01",
+      "role": "hr_analyst"
+    }
+  ],
+  "departments": [
+    {
+      "id": "dept_eng_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Engineering & Technology"
+    },
+    {
+      "id": "dept_ops_02",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Operations & Compliance"
+    },
+    {
+      "id": "dept_growth_03",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Growth & Product"
+    },
+    {
+      "id": "dept_people_04",
+      "company_id": "org_ghana_fintech_01",
+      "name": "People Operations"
+    }
+  ],
+  "employees": [
+    {
+      "id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Dr. Nana Yaa Appiah",
+      "department_id": "dept_ops_02",
+      "job_title": "Managing Director & Country Head",
+      "employment_type": "full_time",
+      "country": "Ghana",
+      "start_date": "2022-01-10",
+      "status": "active",
+      "attrition_risk": "low"
+    },
+    {
+      "id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Kwame Mensah",
+      "department_id": "dept_eng_01",
+      "job_title": "Head of Engineering",
+      "employment_type": "full_time",
+      "country": "Ghana",
+      "start_date": "2023-03-15",
+      "status": "active",
+      "attrition_risk": "low",
+      "manager_id": "emp_000"
+    },
+    {
+      "id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Ama Osei-Bonsu",
+      "department_id": "dept_growth_03",
+      "job_title": "Product Design Lead",
+      "employment_type": "full_time",
+      "country": "Ghana",
+      "start_date": "2023-08-01",
+      "status": "active",
+      "attrition_risk": "medium",
+      "manager_id": "emp_000"
+    },
+    {
+      "id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Kofi Boateng",
+      "department_id": "dept_ops_02",
+      "job_title": "Compliance & Legal Officer",
+      "employment_type": "contract",
+      "country": "Ghana",
+      "start_date": "2024-01-10",
+      "status": "on_leave",
+      "attrition_risk": "low",
+      "manager_id": "emp_000"
+    },
+    {
+      "id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Abena Ansah",
+      "department_id": "dept_eng_01",
+      "job_title": "Frontend Developer",
+      "employment_type": "full_time",
+      "country": "United Kingdom",
+      "start_date": "2024-05-02",
+      "status": "probation",
+      "attrition_risk": "high",
+      "manager_id": "emp_001"
+    },
+    {
+      "id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Ebenezer Addo",
+      "department_id": "dept_people_04",
+      "job_title": "HR Operations Associate",
+      "employment_type": "full_time",
+      "country": "Ghana",
+      "start_date": "2024-02-15",
+      "status": "active",
+      "attrition_risk": "low",
+      "manager_id": "emp_003"
+    }
+  ],
+  "employee_compensation": [
+    {
+      "id": "comp_000",
+      "employee_id": "emp_000",
+      "salary": 48000,
+      "currency": "GHS",
+      "effective_date": "2022-01-10",
+      "allowances": 6000,
+      "bonus": 5000,
+      "notes": "Executive Managing Director compensation package",
+      "statutory_data": {
+        "ssnit_number": "C018472910394",
+        "pension_tier_2_3_provider": "Enterprise Trustees Tier 2 Master Trust",
+        "tin": "P0092837461",
+        "paye_band": "Graduated 0%–35% Cumulative"
+      },
+      "created_at": "2022-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "comp_001_v1",
+      "employee_id": "emp_001",
+      "salary": 28500,
+      "currency": "GHS",
+      "effective_date": "2023-03-15",
+      "allowances": 3500,
+      "bonus": 2000,
+      "notes": "Initial hire package (Engineering Lead)",
+      "statutory_data": {
+        "ssnit_number": "C019823481234",
+        "pension_tier_2_3_provider": "Enterprise Trustees Tier 2 Master Trust",
+        "tin": "P0002938471",
+        "paye_band": "Graduated 0%–35% Cumulative"
+      },
+      "created_at": "2023-03-15T09:00:00.000Z"
+    },
+    {
+      "id": "comp_001_v2",
+      "employee_id": "emp_001",
+      "salary": 32000,
+      "currency": "GHS",
+      "effective_date": "2024-01-01",
+      "allowances": 4200,
+      "bonus": 2500,
+      "notes": "Annual merit increase & executive allowance promotion",
+      "statutory_data": {
+        "ssnit_number": "C019823481234",
+        "pension_tier_2_3_provider": "Enterprise Trustees Tier 2 Master Trust",
+        "tin": "P0002938471",
+        "paye_band": "Graduated 0%–35% Cumulative"
+      },
+      "created_at": "2024-01-01T09:00:00.000Z"
+    },
+    {
+      "id": "comp_002",
+      "employee_id": "emp_002",
+      "salary": 24000,
+      "currency": "GHS",
+      "effective_date": "2023-08-01",
+      "allowances": 2500,
+      "bonus": 1200,
+      "notes": "Product Manager baseline package",
+      "statutory_data": {
+        "ssnit_number": "C092837461928",
+        "pension_tier_2_3_provider": "Petra Trust Opportunity Pension",
+        "tin": "P0084729103",
+        "paye_band": "Graduated 0%–35% Cumulative"
+      },
+      "created_at": "2023-08-01T09:00:00.000Z"
+    },
+    {
+      "id": "comp_003",
+      "employee_id": "emp_003",
+      "salary": 18000,
+      "currency": "GHS",
+      "effective_date": "2024-01-10",
+      "allowances": 1800,
+      "bonus": 800,
+      "notes": "DevOps Engineer package",
+      "statutory_data": {
+        "ssnit_number": "C038472918293",
+        "pension_tier_2_3_provider": "Axis Pensions Heritage Fund",
+        "tin": "P0019283746",
+        "paye_band": "Graduated 0%–35% Cumulative"
+      },
+      "created_at": "2024-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "comp_004",
+      "employee_id": "emp_004",
+      "salary": 3200,
+      "currency": "GBP",
+      "effective_date": "2024-05-02",
+      "allowances": 400,
+      "bonus": 300,
+      "notes": "UK Remote Developer standard contract",
+      "statutory_data": {
+        "ni_number": "QQ 12 34 56 A",
+        "pension_provider": "NEST Workplace Pension (5% Employee / 3% Employer)",
+        "tax_code": "1257L Cumulative",
+        "utr_number": "9283746182"
+      },
+      "created_at": "2024-05-02T09:00:00.000Z"
+    },
+    {
+      "id": "comp_005",
+      "employee_id": "emp_005",
+      "salary": 14500,
+      "currency": "GHS",
+      "effective_date": "2024-02-15",
+      "allowances": 1500,
+      "bonus": 500,
+      "notes": "HR Operations Associate package",
+      "statutory_data": {
+        "ssnit_number": "C074829104829",
+        "pension_tier_2_3_provider": "Enterprise Trustees Tier 2 Master Trust",
+        "tin": "P0072819304",
+        "paye_band": "Graduated 0%–35% Cumulative"
+      },
+      "created_at": "2024-02-15T09:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr_hr_head_01",
+      "email": "ignatius@korapay.com",
+      "email_verified": true,
+      "created_at": "2026-09-05T23:15:50.522Z",
+      "password_hash": "password123"
+    },
+    {
+      "id": "usr_hr_analyst_01",
+      "email": "analyst@korapay.com",
+      "email_verified": true,
+      "created_at": "2026-09-05T23:15:50.522Z",
+      "password_hash": "password123"
+    }
+  ],
+  "invites": [],
+  "onboarding_tasks": [
+    {
+      "id": "onb_mtp048ze_rfd9we3k",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "category": "personal_info",
+      "task": "Complete biodata form & verify national contact details",
+      "status": "completed",
+      "due_date": "2022-01-10",
+      "completed_at": "2026-09-05T23:15:50.522Z",
+      "completed_by": "hr_analyst",
+      "notes": "Verified residential address & primary contact phone number"
+    },
+    {
+      "id": "onb_mtp048ze_5t31yfs7",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "category": "emergency_contact",
+      "task": "Record emergency contact & next of kin details",
+      "status": "completed",
+      "due_date": "2022-01-10",
+      "completed_at": "2026-09-05T23:15:50.522Z",
+      "completed_by": "hr_analyst",
+      "notes": "Primary next of kin registered"
+    },
+    {
+      "id": "onb_mtp048ze_sd23jd82",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "category": "payroll_bank",
+      "task": "Setup bank details for local GHS payroll disbursement",
+      "status": "pending",
+      "due_date": "2022-01-10"
+    },
+    {
+      "id": "onb_mtp048ze_a2c360tl",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "category": "statutory_info",
+      "task": "Collect statutory compliance info: SSNIT Number, TIN & Ghana Card PIN",
+      "status": "pending",
+      "due_date": "2022-01-10"
+    },
+    {
+      "id": "onb_mtp048ze_hlld4qbj",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "category": "document_upload",
+      "task": "Upload Ghana Card copy, passport photo & academic certificates",
+      "status": "pending",
+      "due_date": "2022-01-10"
+    },
+    {
+      "id": "onb_mtp048ze_9bd7b4tn",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "category": "policy_acknowledgement",
+      "task": "Sign Company Handbook, Code of Conduct & IP Agreement",
+      "status": "pending",
+      "due_date": "2022-01-10"
+    },
+    {
+      "id": "onb_mtp048ze_rn3vz2hf",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "category": "personal_info",
+      "task": "Complete biodata form & verify national contact details",
+      "status": "completed",
+      "due_date": "2023-03-15",
+      "completed_at": "2023-03-15",
+      "completed_by": "hr_analyst",
+      "notes": "Verified residential address & primary contact phone number"
+    },
+    {
+      "id": "onb_mtp048ze_v3b2zuhg",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "category": "emergency_contact",
+      "task": "Record emergency contact & next of kin details",
+      "status": "completed",
+      "due_date": "2023-03-15",
+      "completed_at": "2023-03-15",
+      "completed_by": "hr_analyst",
+      "notes": "Primary next of kin registered"
+    },
+    {
+      "id": "onb_mtp048ze_mq0s9pc0",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "category": "payroll_bank",
+      "task": "Setup bank details for local GHS payroll disbursement",
+      "status": "completed",
+      "due_date": "2023-03-15",
+      "completed_at": "2023-03-15",
+      "completed_by": "hr_analyst"
+    },
+    {
+      "id": "onb_mtp048ze_upp0ct1x",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "category": "statutory_info",
+      "task": "Collect statutory compliance info: SSNIT Number, TIN & Ghana Card PIN",
+      "status": "completed",
+      "due_date": "2023-03-15",
+      "completed_at": "2023-03-15",
+      "completed_by": "hr_analyst"
+    },
+    {
+      "id": "onb_mtp048ze_pwpmivh8",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "category": "document_upload",
+      "task": "Upload Ghana Card copy, passport photo & academic certificates",
+      "status": "completed",
+      "due_date": "2023-03-15",
+      "completed_at": "2023-03-15",
+      "completed_by": "hr_analyst"
+    },
+    {
+      "id": "onb_mtp048ze_dxqw7vry",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "category": "policy_acknowledgement",
+      "task": "Sign Company Handbook, Code of Conduct & IP Agreement",
+      "status": "completed",
+      "due_date": "2023-03-15",
+      "completed_at": "2023-03-15",
+      "completed_by": "hr_analyst"
+    },
+    {
+      "id": "onb_mtp048zf_fiv91z9g",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "category": "personal_info",
+      "task": "Complete biodata form & verify national contact details",
+      "status": "completed",
+      "due_date": "2023-08-01",
+      "completed_at": "2023-08-01",
+      "completed_by": "hr_analyst",
+      "notes": "Verified residential address & primary contact phone number"
+    },
+    {
+      "id": "onb_mtp048zf_ti4yq9iy",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "category": "emergency_contact",
+      "task": "Record emergency contact & next of kin details",
+      "status": "completed",
+      "due_date": "2023-08-01",
+      "completed_at": "2023-08-01",
+      "completed_by": "hr_analyst",
+      "notes": "Primary next of kin registered"
+    },
+    {
+      "id": "onb_mtp048zf_oodgkojn",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "category": "payroll_bank",
+      "task": "Setup bank details for local GHS payroll disbursement",
+      "status": "completed",
+      "due_date": "2023-08-01",
+      "completed_at": "2023-08-01",
+      "completed_by": "hr_analyst"
+    },
+    {
+      "id": "onb_mtp048zf_sbu1gq33",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "category": "statutory_info",
+      "task": "Collect statutory compliance info: SSNIT Number, TIN & Ghana Card PIN",
+      "status": "completed",
+      "due_date": "2023-08-01",
+      "completed_at": "2023-08-01",
+      "completed_by": "hr_analyst"
+    },
+    {
+      "id": "onb_mtp048zf_7mo95st6",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "category": "document_upload",
+      "task": "Upload Ghana Card copy, passport photo & academic certificates",
+      "status": "completed",
+      "due_date": "2023-08-01",
+      "completed_at": "2023-08-01",
+      "completed_by": "hr_analyst"
+    },
+    {
+      "id": "onb_mtp048zf_u001p9f0",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "category": "policy_acknowledgement",
+      "task": "Sign Company Handbook, Code of Conduct & IP Agreement",
+      "status": "completed",
+      "due_date": "2023-08-01",
+      "completed_at": "2023-08-01",
+      "completed_by": "hr_analyst"
+    },
+    {
+      "id": "onb_mtp048zf_4uy0vg1y",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "category": "personal_info",
+      "task": "Complete biodata form & verify national contact details",
+      "status": "completed",
+      "due_date": "2024-01-10",
+      "completed_at": "2026-09-05T23:15:50.523Z",
+      "completed_by": "hr_analyst",
+      "notes": "Verified residential address & primary contact phone number"
+    },
+    {
+      "id": "onb_mtp048zf_eeni1k5y",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "category": "emergency_contact",
+      "task": "Record emergency contact & next of kin details",
+      "status": "completed",
+      "due_date": "2024-01-10",
+      "completed_at": "2026-09-05T23:15:50.523Z",
+      "completed_by": "hr_analyst",
+      "notes": "Primary next of kin registered"
+    },
+    {
+      "id": "onb_mtp048zf_vh3gllnp",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "category": "payroll_bank",
+      "task": "Setup bank details for local GHS payroll disbursement",
+      "status": "pending",
+      "due_date": "2024-01-10"
+    },
+    {
+      "id": "onb_mtp048zf_b5y64srt",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "category": "statutory_info",
+      "task": "Collect statutory compliance info: SSNIT Number, TIN & Ghana Card PIN",
+      "status": "pending",
+      "due_date": "2024-01-10"
+    },
+    {
+      "id": "onb_mtp048zf_ahkd9opc",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "category": "document_upload",
+      "task": "Upload Ghana Card copy, passport photo & academic certificates",
+      "status": "pending",
+      "due_date": "2024-01-10"
+    },
+    {
+      "id": "onb_mtp048zf_nqnt21fn",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "category": "policy_acknowledgement",
+      "task": "Sign Company Handbook, Code of Conduct & IP Agreement",
+      "status": "pending",
+      "due_date": "2024-01-10"
+    },
+    {
+      "id": "onb_mtp048zf_t9pj1vyz",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "category": "personal_info",
+      "task": "Collect personal information & UK proof of address",
+      "status": "completed",
+      "due_date": "2024-05-02",
+      "completed_at": "2026-09-05T23:15:50.523Z",
+      "completed_by": "hr_analyst"
+    },
+    {
+      "id": "onb_mtp048zf_8n29cd9s",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "category": "emergency_contact",
+      "task": "Emergency contact & next of kin registry",
+      "status": "completed",
+      "due_date": "2024-05-02"
+    },
+    {
+      "id": "onb_mtp048zf_dkxwes99",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "category": "payroll_bank",
+      "task": "UK bank account sort code & account number setup",
+      "status": "completed",
+      "due_date": "2024-05-02"
+    },
+    {
+      "id": "onb_mtp048zf_ka23phg9",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "category": "statutory_info",
+      "task": "Record National Insurance (NI) number & P45/Tax code declaration",
+      "status": "pending",
+      "due_date": "2024-05-02"
+    },
+    {
+      "id": "onb_mtp048zf_qc63mipb",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "category": "document_upload",
+      "task": "Upload Right to Work check documents & passport",
+      "status": "pending",
+      "due_date": "2024-05-02"
+    },
+    {
+      "id": "onb_mtp048zf_k68u3nvi",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "category": "policy_acknowledgement",
+      "task": "Sign UK Employment Contract & Workplace Safety policies",
+      "status": "pending",
+      "due_date": "2024-05-02"
+    },
+    {
+      "id": "onb_mtp048zf_68an2ti1",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "category": "personal_info",
+      "task": "Complete biodata form & verify national contact details",
+      "status": "completed",
+      "due_date": "2024-02-15",
+      "completed_at": "2026-09-05T23:15:50.523Z",
+      "completed_by": "hr_analyst",
+      "notes": "Verified residential address & primary contact phone number"
+    },
+    {
+      "id": "onb_mtp048zf_ilpwkub5",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "category": "emergency_contact",
+      "task": "Record emergency contact & next of kin details",
+      "status": "completed",
+      "due_date": "2024-02-15",
+      "completed_at": "2026-09-05T23:15:50.523Z",
+      "completed_by": "hr_analyst",
+      "notes": "Primary next of kin registered"
+    },
+    {
+      "id": "onb_mtp048zf_lta03pb9",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "category": "payroll_bank",
+      "task": "Setup bank details for local GHS payroll disbursement",
+      "status": "pending",
+      "due_date": "2024-02-15"
+    },
+    {
+      "id": "onb_mtp048zf_m0tveklf",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "category": "statutory_info",
+      "task": "Collect statutory compliance info: SSNIT Number, TIN & Ghana Card PIN",
+      "status": "pending",
+      "due_date": "2024-02-15"
+    },
+    {
+      "id": "onb_mtp048zf_fjavmpdb",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "category": "document_upload",
+      "task": "Upload Ghana Card copy, passport photo & academic certificates",
+      "status": "pending",
+      "due_date": "2024-02-15"
+    },
+    {
+      "id": "onb_mtp048zf_y1pl9987",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "category": "policy_acknowledgement",
+      "task": "Sign Company Handbook, Code of Conduct & IP Agreement",
+      "status": "pending",
+      "due_date": "2024-02-15"
+    }
+  ],
+  "offboarding_tasks": [],
+  "offboarding_records": [],
+  "attendance_records": [
+    {
+      "id": "att_mtp048zf_4ysgoxto",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "date": "2026-09-05",
+      "status": "present"
+    },
+    {
+      "id": "att_mtp048zf_irlj7g1i",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "date": "2026-09-05",
+      "status": "present"
+    },
+    {
+      "id": "att_mtp048zf_7lnp4k7r",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "date": "2026-09-05",
+      "status": "on_leave",
+      "notes": "Approved Annual Leave"
+    },
+    {
+      "id": "att_mtp048zf_oi0b2vfh",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "date": "2026-09-05",
+      "status": "late",
+      "notes": "Remote transit delay (15 min)"
+    },
+    {
+      "id": "att_mtp048zf_kjw0bozc",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "date": "2026-09-05",
+      "status": "absent",
+      "notes": "Unscheduled absence"
+    }
+  ],
+  "daily_attendance_summary": [
+    {
+      "company_id": "org_ghana_fintech_01",
+      "date": "2026-09-05",
+      "present_count": 2,
+      "late_count": 1,
+      "absent_count": 1,
+      "on_leave_count": 1,
+      "not_logged_count": 1
+    },
+    {
+      "company_id": "org_ghana_fintech_01",
+      "date": "2026-09-07",
+      "present_count": 0,
+      "late_count": 0,
+      "absent_count": 0,
+      "on_leave_count": 0,
+      "not_logged_count": 6
+    },
+    {
+      "company_id": "org_ghana_fintech_01",
+      "date": "2026-09-12",
+      "present_count": 0,
+      "late_count": 0,
+      "absent_count": 0,
+      "on_leave_count": 0,
+      "not_logged_count": 6
+    }
+  ],
+  "leave_types": [
+    {
+      "id": "lt_annual_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Annual Leave",
+      "default_entitlement_days": 20,
+      "description": "Standard paid statutory annual leave (Ghana Labour Act default 15-20 working days)",
+      "paid": true
+    },
+    {
+      "id": "lt_sick_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Sick Leave",
+      "default_entitlement_days": 10,
+      "description": "Paid medical leave with certified medical practitioner note",
+      "paid": true
+    },
+    {
+      "id": "lt_maternity_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Maternity Leave",
+      "default_entitlement_days": 84,
+      "description": "Statutory 12-week paid maternity leave for female employees",
+      "paid": true
+    },
+    {
+      "id": "lt_paternity_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Paternity Leave",
+      "default_entitlement_days": 5,
+      "description": "Paid leave for new fathers upon birth or adoption of child",
+      "paid": true
+    },
+    {
+      "id": "lt_compassionate_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Compassionate Leave",
+      "default_entitlement_days": 3,
+      "description": "Paid bereavement and family emergency leave",
+      "paid": true
+    },
+    {
+      "id": "lt_unpaid_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Unpaid Leave",
+      "default_entitlement_days": 0,
+      "description": "Approved leave of absence without payroll entitlement",
+      "paid": false
+    },
+    {
+      "id": "lt_annual_org_goldkey_02",
+      "company_id": "org_goldkey_02",
+      "name": "Annual Leave",
+      "default_entitlement_days": 20,
+      "description": "Standard paid statutory annual leave (Ghana Labour Act default 15-20 working days)",
+      "paid": true
+    },
+    {
+      "id": "lt_sick_org_goldkey_02",
+      "company_id": "org_goldkey_02",
+      "name": "Sick Leave",
+      "default_entitlement_days": 10,
+      "description": "Paid medical leave with certified medical practitioner note",
+      "paid": true
+    },
+    {
+      "id": "lt_maternity_org_goldkey_02",
+      "company_id": "org_goldkey_02",
+      "name": "Maternity Leave",
+      "default_entitlement_days": 84,
+      "description": "Statutory 12-week paid maternity leave for female employees",
+      "paid": true
+    },
+    {
+      "id": "lt_paternity_org_goldkey_02",
+      "company_id": "org_goldkey_02",
+      "name": "Paternity Leave",
+      "default_entitlement_days": 5,
+      "description": "Paid leave for new fathers upon birth or adoption of child",
+      "paid": true
+    },
+    {
+      "id": "lt_compassionate_org_goldkey_02",
+      "company_id": "org_goldkey_02",
+      "name": "Compassionate Leave",
+      "default_entitlement_days": 3,
+      "description": "Paid bereavement and family emergency leave",
+      "paid": true
+    },
+    {
+      "id": "lt_unpaid_org_goldkey_02",
+      "company_id": "org_goldkey_02",
+      "name": "Unpaid Leave",
+      "default_entitlement_days": 0,
+      "description": "Approved leave of absence without payroll entitlement",
+      "paid": false
+    },
+    {
+      "id": "lt_annual_org_payswitch_03",
+      "company_id": "org_payswitch_03",
+      "name": "Annual Leave",
+      "default_entitlement_days": 20,
+      "description": "Standard paid statutory annual leave (Ghana Labour Act default 15-20 working days)",
+      "paid": true
+    },
+    {
+      "id": "lt_sick_org_payswitch_03",
+      "company_id": "org_payswitch_03",
+      "name": "Sick Leave",
+      "default_entitlement_days": 10,
+      "description": "Paid medical leave with certified medical practitioner note",
+      "paid": true
+    },
+    {
+      "id": "lt_maternity_org_payswitch_03",
+      "company_id": "org_payswitch_03",
+      "name": "Maternity Leave",
+      "default_entitlement_days": 84,
+      "description": "Statutory 12-week paid maternity leave for female employees",
+      "paid": true
+    },
+    {
+      "id": "lt_paternity_org_payswitch_03",
+      "company_id": "org_payswitch_03",
+      "name": "Paternity Leave",
+      "default_entitlement_days": 5,
+      "description": "Paid leave for new fathers upon birth or adoption of child",
+      "paid": true
+    },
+    {
+      "id": "lt_compassionate_org_payswitch_03",
+      "company_id": "org_payswitch_03",
+      "name": "Compassionate Leave",
+      "default_entitlement_days": 3,
+      "description": "Paid bereavement and family emergency leave",
+      "paid": true
+    },
+    {
+      "id": "lt_unpaid_org_payswitch_03",
+      "company_id": "org_payswitch_03",
+      "name": "Unpaid Leave",
+      "default_entitlement_days": 0,
+      "description": "Approved leave of absence without payroll entitlement",
+      "paid": false
+    },
+    {
+      "id": "lt_annual_org_afrilog_04",
+      "company_id": "org_afrilog_04",
+      "name": "Annual Leave",
+      "default_entitlement_days": 20,
+      "description": "Standard paid statutory annual leave (Ghana Labour Act default 15-20 working days)",
+      "paid": true
+    },
+    {
+      "id": "lt_sick_org_afrilog_04",
+      "company_id": "org_afrilog_04",
+      "name": "Sick Leave",
+      "default_entitlement_days": 10,
+      "description": "Paid medical leave with certified medical practitioner note",
+      "paid": true
+    },
+    {
+      "id": "lt_maternity_org_afrilog_04",
+      "company_id": "org_afrilog_04",
+      "name": "Maternity Leave",
+      "default_entitlement_days": 84,
+      "description": "Statutory 12-week paid maternity leave for female employees",
+      "paid": true
+    },
+    {
+      "id": "lt_paternity_org_afrilog_04",
+      "company_id": "org_afrilog_04",
+      "name": "Paternity Leave",
+      "default_entitlement_days": 5,
+      "description": "Paid leave for new fathers upon birth or adoption of child",
+      "paid": true
+    },
+    {
+      "id": "lt_compassionate_org_afrilog_04",
+      "company_id": "org_afrilog_04",
+      "name": "Compassionate Leave",
+      "default_entitlement_days": 3,
+      "description": "Paid bereavement and family emergency leave",
+      "paid": true
+    },
+    {
+      "id": "lt_unpaid_org_afrilog_04",
+      "company_id": "org_afrilog_04",
+      "name": "Unpaid Leave",
+      "default_entitlement_days": 0,
+      "description": "Approved leave of absence without payroll entitlement",
+      "paid": false
+    }
+  ],
+  "leave_balances": [
+    {
+      "id": "lbal_mtp048ze_bsc5ga89",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_annual_org_ghana_fintech_01",
+      "allocated_days": 20,
+      "used_days": 0,
+      "balance_days": 20
+    },
+    {
+      "id": "lbal_mtp048ze_l6eqk6o8",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_sick_org_ghana_fintech_01",
+      "allocated_days": 10,
+      "used_days": 0,
+      "balance_days": 10
+    },
+    {
+      "id": "lbal_mtp048ze_bo12359d",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_maternity_org_ghana_fintech_01",
+      "allocated_days": 84,
+      "used_days": 0,
+      "balance_days": 84
+    },
+    {
+      "id": "lbal_mtp048ze_kz8ytz0k",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_paternity_org_ghana_fintech_01",
+      "allocated_days": 5,
+      "used_days": 0,
+      "balance_days": 5
+    },
+    {
+      "id": "lbal_mtp048ze_n6hw32it",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_compassionate_org_ghana_fintech_01",
+      "allocated_days": 3,
+      "used_days": 0,
+      "balance_days": 3
+    },
+    {
+      "id": "lbal_mtp048ze_d90fqzd9",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_unpaid_org_ghana_fintech_01",
+      "allocated_days": 0,
+      "used_days": 0,
+      "balance_days": 0
+    },
+    {
+      "id": "lbal_mtp048ze_1r6icg7t",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_annual_org_ghana_fintech_01",
+      "allocated_days": 20,
+      "used_days": 0,
+      "balance_days": 20
+    },
+    {
+      "id": "lbal_mtp048ze_ltnnrw87",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_sick_org_ghana_fintech_01",
+      "allocated_days": 10,
+      "used_days": 0,
+      "balance_days": 10
+    },
+    {
+      "id": "lbal_mtp048ze_vre3f4yk",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_maternity_org_ghana_fintech_01",
+      "allocated_days": 84,
+      "used_days": 0,
+      "balance_days": 84
+    },
+    {
+      "id": "lbal_mtp048ze_xn941fu5",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_paternity_org_ghana_fintech_01",
+      "allocated_days": 5,
+      "used_days": 0,
+      "balance_days": 5
+    },
+    {
+      "id": "lbal_mtp048ze_2j5yojke",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_compassionate_org_ghana_fintech_01",
+      "allocated_days": 3,
+      "used_days": 0,
+      "balance_days": 3
+    },
+    {
+      "id": "lbal_mtp048ze_vclxjq8i",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_unpaid_org_ghana_fintech_01",
+      "allocated_days": 0,
+      "used_days": 0,
+      "balance_days": 0
+    },
+    {
+      "id": "lbal_mtp048ze_vp3ttmrp",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_annual_org_ghana_fintech_01",
+      "allocated_days": 20,
+      "used_days": 0,
+      "balance_days": 20
+    },
+    {
+      "id": "lbal_mtp048ze_mkt28740",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_sick_org_ghana_fintech_01",
+      "allocated_days": 10,
+      "used_days": 0,
+      "balance_days": 10
+    },
+    {
+      "id": "lbal_mtp048ze_lzs1xtdg",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_maternity_org_ghana_fintech_01",
+      "allocated_days": 84,
+      "used_days": 0,
+      "balance_days": 84
+    },
+    {
+      "id": "lbal_mtp048ze_2tv4j3dl",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_paternity_org_ghana_fintech_01",
+      "allocated_days": 5,
+      "used_days": 0,
+      "balance_days": 5
+    },
+    {
+      "id": "lbal_mtp048ze_0lqihd58",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_compassionate_org_ghana_fintech_01",
+      "allocated_days": 3,
+      "used_days": 0,
+      "balance_days": 3
+    },
+    {
+      "id": "lbal_mtp048ze_ef2w8wqa",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_unpaid_org_ghana_fintech_01",
+      "allocated_days": 0,
+      "used_days": 0,
+      "balance_days": 0
+    },
+    {
+      "id": "lbal_mtp048ze_uq5l1jba",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_annual_org_ghana_fintech_01",
+      "allocated_days": 20,
+      "used_days": 5,
+      "balance_days": 15
+    },
+    {
+      "id": "lbal_mtp048ze_a0ac8lix",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_sick_org_ghana_fintech_01",
+      "allocated_days": 10,
+      "used_days": 0,
+      "balance_days": 10
+    },
+    {
+      "id": "lbal_mtp048ze_n2t89kxg",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_maternity_org_ghana_fintech_01",
+      "allocated_days": 84,
+      "used_days": 0,
+      "balance_days": 84
+    },
+    {
+      "id": "lbal_mtp048ze_i08fmbhm",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_paternity_org_ghana_fintech_01",
+      "allocated_days": 5,
+      "used_days": 0,
+      "balance_days": 5
+    },
+    {
+      "id": "lbal_mtp048ze_dgfvm8qv",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_compassionate_org_ghana_fintech_01",
+      "allocated_days": 3,
+      "used_days": 0,
+      "balance_days": 3
+    },
+    {
+      "id": "lbal_mtp048ze_p6na5me5",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_unpaid_org_ghana_fintech_01",
+      "allocated_days": 0,
+      "used_days": 0,
+      "balance_days": 0
+    },
+    {
+      "id": "lbal_mtp048ze_tcc44gpb",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_annual_org_ghana_fintech_01",
+      "allocated_days": 20,
+      "used_days": 0,
+      "balance_days": 20
+    },
+    {
+      "id": "lbal_mtp048ze_kldp336m",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_sick_org_ghana_fintech_01",
+      "allocated_days": 10,
+      "used_days": 0,
+      "balance_days": 10
+    },
+    {
+      "id": "lbal_mtp048ze_zy96eat4",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_maternity_org_ghana_fintech_01",
+      "allocated_days": 84,
+      "used_days": 0,
+      "balance_days": 84
+    },
+    {
+      "id": "lbal_mtp048ze_bjt7uqaf",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_paternity_org_ghana_fintech_01",
+      "allocated_days": 5,
+      "used_days": 0,
+      "balance_days": 5
+    },
+    {
+      "id": "lbal_mtp048ze_fm66w7lo",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_compassionate_org_ghana_fintech_01",
+      "allocated_days": 3,
+      "used_days": 0,
+      "balance_days": 3
+    },
+    {
+      "id": "lbal_mtp048ze_qiv924np",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_unpaid_org_ghana_fintech_01",
+      "allocated_days": 0,
+      "used_days": 0,
+      "balance_days": 0
+    },
+    {
+      "id": "lbal_mtp048ze_wtjuybya",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_annual_org_ghana_fintech_01",
+      "allocated_days": 20,
+      "used_days": 0,
+      "balance_days": 20
+    },
+    {
+      "id": "lbal_mtp048ze_bgwk5oam",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_sick_org_ghana_fintech_01",
+      "allocated_days": 10,
+      "used_days": 0,
+      "balance_days": 10
+    },
+    {
+      "id": "lbal_mtp048ze_3tvqo8ys",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_maternity_org_ghana_fintech_01",
+      "allocated_days": 84,
+      "used_days": 0,
+      "balance_days": 84
+    },
+    {
+      "id": "lbal_mtp048ze_1cmf4izy",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_paternity_org_ghana_fintech_01",
+      "allocated_days": 5,
+      "used_days": 0,
+      "balance_days": 5
+    },
+    {
+      "id": "lbal_mtp048ze_oguewle5",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_compassionate_org_ghana_fintech_01",
+      "allocated_days": 3,
+      "used_days": 0,
+      "balance_days": 3
+    },
+    {
+      "id": "lbal_mtp048ze_9c2g0pk9",
+      "employee_id": "emp_005",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_unpaid_org_ghana_fintech_01",
+      "allocated_days": 0,
+      "used_days": 0,
+      "balance_days": 0
+    }
+  ],
+  "leave_requests": [
+    {
+      "id": "lreq_001",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_annual_org_ghana_fintech_01",
+      "start_date": "2026-09-05",
+      "end_date": "2026-09-05",
+      "days_requested": 5,
+      "status": "approved",
+      "reason": "Mid-year family vacation and medical checkup",
+      "approved_by": "usr_hr_head_01",
+      "approved_at": "2026-09-03T23:15:50.522Z",
+      "escalated_to_head": true,
+      "created_at": "2026-09-01T23:15:50.522Z"
+    },
+    {
+      "id": "lreq_002",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_annual_org_ghana_fintech_01",
+      "start_date": "2026-09-05",
+      "end_date": "2026-09-05",
+      "days_requested": 4,
+      "status": "pending",
+      "reason": "Attending technical conference & relocation personal days",
+      "escalated_to_head": true,
+      "created_at": "2026-09-05T23:15:50.522Z"
+    },
+    {
+      "id": "lreq_003",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "leave_type_id": "lt_sick_org_ghana_fintech_01",
+      "start_date": "2026-09-05",
+      "end_date": "2026-09-05",
+      "days_requested": 2,
+      "status": "pending",
+      "reason": "Flu symptoms recovery",
+      "escalated_to_head": false,
+      "created_at": "2026-09-05T23:15:50.522Z"
+    }
+  ],
+  "leave_audit_logs": [
+    {
+      "id": "laudit_seed_001",
+      "company_id": "org_ghana_fintech_01",
+      "employee_id": "emp_003",
+      "employee_name": "Kofi Boateng",
+      "leave_request_id": "lreq_001",
+      "leave_type_id": "lt_annual_org_ghana_fintech_01",
+      "leave_type_name": "Annual Leave",
+      "action": "deduction",
+      "days_changed": -5,
+      "previous_balance": 15,
+      "new_balance": 10,
+      "performed_by": "ignatius@korapay.com",
+      "timestamp": "2026-09-03T23:15:50.523Z",
+      "notes": "Deducted 5 days upon approval for mid-year family vacation"
+    }
+  ],
+  "compliance_items": [
+    {
+      "id": "comp_item_001",
+      "company_id": "org_ghana_fintech_01",
+      "category": "contracts_visas",
+      "related_employee_id": "emp_002",
+      "related_employee_name": "Ama Osei-Bonsu",
+      "title": "Employment Contract Renewal - Ama Serwaa",
+      "deadline": "2026-09-25",
+      "status": "attention",
+      "document_id": "doc_003",
+      "notes": "Fixed-term 3-year contract expires on September 25, 2026. HR review required for permanent rollover.",
+      "created_at": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "id": "comp_item_002",
+      "company_id": "org_ghana_fintech_01",
+      "category": "certifications",
+      "related_employee_id": "emp_003",
+      "related_employee_name": "Kofi Boateng",
+      "title": "AWS Certified DevOps Renewal - Kofi Boateng",
+      "deadline": "2026-08-20",
+      "status": "non_compliant",
+      "document_id": "doc_004",
+      "notes": "AWS Professional certification expired 12 days ago. Required for SOC2 compliance checklist.",
+      "created_at": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "id": "comp_item_003",
+      "company_id": "org_ghana_fintech_01",
+      "category": "statutory_tax",
+      "title": "SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance",
+      "deadline": "2026-09-14",
+      "status": "attention",
+      "notes": "Ghana statutory deadline for August payroll social security filing (13.5% Tier 1 + 5% Tier 2).",
+      "created_at": "2026-08-15T00:00:00.000Z"
+    },
+    {
+      "id": "comp_item_004",
+      "company_id": "org_ghana_fintech_01",
+      "category": "statutory_tax",
+      "title": "GRA PAYE Monthly Tax Return Filing & Remittance",
+      "deadline": "2026-09-15",
+      "status": "attention",
+      "notes": "Monthly withholding tax schedule prepared for Ghana Revenue Authority portal upload.",
+      "created_at": "2026-08-15T00:00:00.000Z"
+    },
+    {
+      "id": "comp_item_005",
+      "company_id": "org_ghana_fintech_01",
+      "category": "workplace_safety",
+      "title": "Annual Workplace First Aid & Fire Safety Inspection",
+      "deadline": "2026-11-30",
+      "status": "compliant",
+      "notes": "Accra Innovation Hub headquarters inspection certified by Ghana National Fire Service.",
+      "created_at": "2026-06-01T00:00:00.000Z"
+    },
+    {
+      "id": "comp_item_006",
+      "company_id": "org_ghana_fintech_01",
+      "category": "contracts_visas",
+      "related_employee_id": "emp_001",
+      "related_employee_name": "Kwame Mensah",
+      "title": "Ghana Card Verification - Kwame Mensah",
+      "deadline": "2026-10-15",
+      "status": "compliant",
+      "document_id": "doc_002",
+      "notes": "National Identity card valid and cross-referenced with NIA biometric registry.",
+      "created_at": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "id": "citem_mtp0497k_09q2yzce",
+      "company_id": "org_ghana_fintech_01",
+      "category": "contracts_visas",
+      "related_employee_id": "emp_001",
+      "related_employee_name": "Kwame Mensah",
+      "title": "Employment Contract Renewal - Kwame Mensah",
+      "deadline": "2027-03-15",
+      "status": "compliant",
+      "document_id": "doc_001",
+      "notes": "Full-time Engineering Lead indefinite service agreement",
+      "created_at": "2026-09-05T23:15:50.816Z"
+    },
+    {
+      "id": "citem_mtp0497k_4eei71ff",
+      "company_id": "org_ghana_fintech_01",
+      "category": "contracts_visas",
+      "related_employee_id": "emp_004",
+      "related_employee_name": "Abena Ansah",
+      "title": "Employment Contract Renewal - Abena Ansah",
+      "deadline": "2027-05-02",
+      "status": "compliant",
+      "document_id": "doc_005",
+      "notes": "UK Remote Engineer contract under UK Employment Rights Act",
+      "created_at": "2026-09-05T23:15:50.816Z"
+    },
+    {
+      "id": "citem_mtp0497k_m4mykk9i",
+      "company_id": "org_ghana_fintech_01",
+      "category": "contracts_visas",
+      "related_employee_id": "emp_004",
+      "related_employee_name": "Abena Ansah",
+      "title": "Identity / Visa Expiry - Abena Ansah",
+      "deadline": "2028-04-30",
+      "status": "compliant",
+      "document_id": "doc_006",
+      "notes": "UK Skilled Worker Visa & Right to Work Share Code",
+      "created_at": "2026-09-05T23:15:50.816Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_001",
+      "company_id": "org_ghana_fintech_01",
+      "employee_id": "emp_001",
+      "type": "contract",
+      "file_ref": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "file_name": "Employment_Contract_Kwame_Mensah.pdf",
+      "file_size": 428000,
+      "expiry_date": "2027-03-15",
+      "uploaded_at": "2023-03-15T10:00:00.000Z",
+      "uploaded_by": "ignatius@korapay.com",
+      "notes": "Full-time Engineering Lead indefinite service agreement"
+    },
+    {
+      "id": "doc_002",
+      "company_id": "org_ghana_fintech_01",
+      "employee_id": "emp_001",
+      "type": "id_card",
+      "file_ref": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "file_name": "Ghana_Card_Kwame_Mensah.pdf",
+      "file_size": 198000,
+      "expiry_date": "2026-10-15",
+      "uploaded_at": "2023-03-16T11:00:00.000Z",
+      "uploaded_by": "ignatius@korapay.com",
+      "notes": "National ID verification PIN GHA-728192834-1"
+    },
+    {
+      "id": "doc_003",
+      "company_id": "org_ghana_fintech_01",
+      "employee_id": "emp_002",
+      "type": "contract",
+      "file_ref": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "file_name": "Fixed_Term_Offer_Ama_Serwaa.pdf",
+      "file_size": 384000,
+      "expiry_date": "2026-09-25",
+      "uploaded_at": "2023-08-01T09:30:00.000Z",
+      "uploaded_by": "ignatius@korapay.com",
+      "notes": "Fixed-term 3-year Product Management agreement due for renewal"
+    },
+    {
+      "id": "doc_004",
+      "company_id": "org_ghana_fintech_01",
+      "employee_id": "emp_003",
+      "type": "certification",
+      "file_ref": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "file_name": "AWS_Certified_DevOps_Engineer_Professional.pdf",
+      "file_size": 512000,
+      "expiry_date": "2026-08-20",
+      "uploaded_at": "2024-01-10T14:00:00.000Z",
+      "uploaded_by": "ignatius@korapay.com",
+      "notes": "AWS Cloud DevOps Certification credential ID AWS-928374"
+    },
+    {
+      "id": "doc_005",
+      "company_id": "org_ghana_fintech_01",
+      "employee_id": "emp_004",
+      "type": "contract",
+      "file_ref": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "file_name": "UK_Employment_Agreement_Abena_Ansah.pdf",
+      "file_size": 440000,
+      "expiry_date": "2027-05-02",
+      "uploaded_at": "2024-05-02T10:15:00.000Z",
+      "uploaded_by": "ignatius@korapay.com",
+      "notes": "UK Remote Engineer contract under UK Employment Rights Act"
+    },
+    {
+      "id": "doc_006",
+      "company_id": "org_ghana_fintech_01",
+      "employee_id": "emp_004",
+      "type": "id_card",
+      "file_ref": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "file_name": "UK_Biometric_Residence_Permit_Visa.pdf",
+      "file_size": 215000,
+      "expiry_date": "2028-04-30",
+      "uploaded_at": "2024-05-02T10:30:00.000Z",
+      "uploaded_by": "ignatius@korapay.com",
+      "notes": "UK Skilled Worker Visa & Right to Work Share Code"
+    }
+  ],
+  "ai_chat_logs": [],
+  "tasks": [
+    {
+      "id": "task_seed_001",
+      "company_id": "org_ghana_fintech_01",
+      "title": "Review Ama Serwaa Fixed-term Rollover",
+      "description": "Ama's 3-year contract expires on Sep 25. Complete HR and Legal review for permanent rollover agreement.",
+      "status": "in_review",
+      "assignee_id": "usr_001",
+      "related_employee_id": "emp_002",
+      "due_date": "2026-09-15",
+      "priority": "urgent",
+      "created_by": "usr_001",
+      "created_at": "2026-09-01T08:30:00.000Z"
+    },
+    {
+      "id": "task_seed_002",
+      "company_id": "org_ghana_fintech_01",
+      "title": "Q3 Engineering Compensation Benchmarking",
+      "description": "Compare local Accra tech market salary ranges against Radford/Pave benchmark medians for Level 3 Engineers.",
+      "status": "in_progress",
+      "assignee_id": "usr_001",
+      "related_employee_id": null,
+      "due_date": "2026-09-18",
+      "priority": "high",
+      "created_by": "usr_001",
+      "created_at": "2026-09-01T09:15:00.000Z"
+    },
+    {
+      "id": "task_seed_003",
+      "company_id": "org_ghana_fintech_01",
+      "title": "SSNIT Tier 1 & 2 Statutory Remittance Filing",
+      "description": "Verify employee and employer social security deductions match August payroll totals before submission.",
+      "status": "todo",
+      "assignee_id": "usr_002",
+      "related_employee_id": null,
+      "due_date": "2026-09-14",
+      "priority": "high",
+      "created_by": "usr_001",
+      "created_at": "2026-09-02T10:00:00.000Z"
+    },
+    {
+      "id": "task_seed_004",
+      "company_id": "org_ghana_fintech_01",
+      "title": "Collect UK NI & HMRC P45 for David Smith",
+      "description": "Request formal documentation for UK remote payroll setup and cumulative tax code application.",
+      "status": "complete",
+      "assignee_id": "usr_002",
+      "related_employee_id": "emp_004",
+      "due_date": "2026-08-30",
+      "priority": "medium",
+      "created_by": "usr_002",
+      "created_at": "2026-08-25T11:00:00.000Z"
+    },
+    {
+      "id": "task_seed_005",
+      "company_id": "org_ghana_fintech_01",
+      "title": "Schedule 90-Day Retention Check-in with Kwame Mensah",
+      "description": "Review career progression, engineering lead responsibilities, and team feedback with Kwame.",
+      "status": "todo",
+      "assignee_id": "usr_001",
+      "related_employee_id": "emp_001",
+      "due_date": "2026-09-22",
+      "priority": "medium",
+      "created_by": "usr_001",
+      "created_at": "2026-09-02T14:30:00.000Z"
+    },
+    {
+      "id": "task_seed_006",
+      "company_id": "org_ghana_fintech_01",
+      "title": "Conduct Remote Ergonomics Assessment for David Smith",
+      "description": "Send standardized remote home office assessment questionnaire and verify setup compliance.",
+      "status": "in_progress",
+      "assignee_id": "usr_002",
+      "related_employee_id": "emp_004",
+      "due_date": "2026-09-28",
+      "priority": "low",
+      "created_by": "usr_001",
+      "created_at": "2026-09-02T15:00:00.000Z"
+    }
+  ],
+  "job_history": [
+    {
+      "id": "jh_seed_001",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "previous_department_id": "dept_eng_01",
+      "new_department_id": "dept_eng_01",
+      "previous_job_title": "Lead Software Architect",
+      "new_job_title": "Head of Engineering",
+      "previous_manager_id": "emp_000",
+      "new_manager_id": "emp_000",
+      "reason": "promotion",
+      "effective_date": "2024-01-15",
+      "changed_by": "usr_hr_head_01",
+      "created_at": "2024-01-15T09:00:00.000Z"
+    },
+    {
+      "id": "jh_seed_002",
+      "employee_id": "emp_002",
+      "company_id": "org_ghana_fintech_01",
+      "previous_department_id": "dept_growth_03",
+      "new_department_id": "dept_growth_03",
+      "previous_job_title": "Senior Product Designer",
+      "new_job_title": "Product Design Lead",
+      "previous_manager_id": "emp_000",
+      "new_manager_id": "emp_000",
+      "reason": "promotion",
+      "effective_date": "2024-03-01",
+      "changed_by": "usr_hr_head_01",
+      "created_at": "2024-03-01T10:00:00.000Z"
+    },
+    {
+      "id": "jh_seed_003",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "previous_department_id": "dept_eng_01",
+      "new_department_id": "dept_eng_01",
+      "previous_job_title": "Full Stack Engineer (UK Remote)",
+      "new_job_title": "Full Stack Engineer (UK Remote)",
+      "previous_manager_id": "emp_000",
+      "new_manager_id": "emp_001",
+      "reason": "restructure",
+      "effective_date": "2024-06-01",
+      "changed_by": "usr_hr_head_01",
+      "created_at": "2024-06-01T11:00:00.000Z"
+    }
+  ],
+  "expense_categories": [
+    {
+      "id": "ec_flight_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Flights",
+      "created_at": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "ec_hotel_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Hotels",
+      "created_at": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "ec_recruitment_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Recruitment costs",
+      "created_at": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "ec_training_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Training",
+      "created_at": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "ec_office_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Office supplies",
+      "created_at": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "ec_other_org_ghana_fintech_01",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Other",
+      "created_at": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp_seed_001",
+      "company_id": "org_ghana_fintech_01",
+      "category_id": "ec_flight_org_ghana_fintech_01",
+      "related_employee_id": "emp_001",
+      "amount": 5200,
+      "currency": "GHS",
+      "date": "2026-08-12",
+      "description": "Flight to Lagos for West Africa Tech Summit & Developer Keynote",
+      "receipt_url": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "receipt_name": "Flight_Booking_KQ502.pdf",
+      "status": "approved",
+      "submitted_by": "usr_hr_analyst_01",
+      "approved_by": "usr_hr_head_01",
+      "approved_at": "2026-08-13T10:30:00.000Z",
+      "created_at": "2026-08-12T14:20:00.000Z"
+    },
+    {
+      "id": "exp_seed_002",
+      "company_id": "org_ghana_fintech_01",
+      "category_id": "ec_hotel_org_ghana_fintech_01",
+      "related_employee_id": "emp_001",
+      "amount": 3800,
+      "currency": "GHS",
+      "date": "2026-08-15",
+      "description": "Eko Hotel 3 nights stay for Lagos Summit delegation",
+      "receipt_url": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "receipt_name": "Hotel_Invoice_Eko.pdf",
+      "status": "approved",
+      "submitted_by": "usr_hr_analyst_01",
+      "approved_by": "usr_hr_head_01",
+      "approved_at": "2026-08-16T09:15:00.000Z",
+      "created_at": "2026-08-15T18:00:00.000Z"
+    },
+    {
+      "id": "exp_seed_003",
+      "company_id": "org_ghana_fintech_01",
+      "category_id": "ec_recruitment_org_ghana_fintech_01",
+      "related_employee_id": null,
+      "amount": 4500,
+      "currency": "GHS",
+      "date": "2026-08-20",
+      "description": "LinkedIn Recruiter Enterprise Seat & Accra Tech Talent job board postings",
+      "receipt_url": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "receipt_name": "LinkedIn_Recruiter_Receipt.pdf",
+      "status": "approved",
+      "submitted_by": "usr_hr_head_01",
+      "approved_by": "usr_hr_head_01",
+      "approved_at": "2026-08-20T11:00:00.000Z",
+      "created_at": "2026-08-20T11:00:00.000Z"
+    },
+    {
+      "id": "exp_seed_004",
+      "company_id": "org_ghana_fintech_01",
+      "category_id": "ec_training_org_ghana_fintech_01",
+      "related_employee_id": "emp_002",
+      "amount": 2950,
+      "currency": "GHS",
+      "date": "2026-08-28",
+      "description": "Executive Product Leadership & Scrum Product Owner Certification",
+      "receipt_url": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "receipt_name": "ProductSchool_Course_Invoice.pdf",
+      "status": "approved",
+      "submitted_by": "usr_hr_analyst_01",
+      "approved_by": "usr_hr_head_01",
+      "approved_at": "2026-08-29T14:00:00.000Z",
+      "created_at": "2026-08-28T16:40:00.000Z"
+    },
+    {
+      "id": "exp_seed_005",
+      "company_id": "org_ghana_fintech_01",
+      "category_id": "ec_office_org_ghana_fintech_01",
+      "related_employee_id": null,
+      "amount": 2100,
+      "currency": "GHS",
+      "date": "2026-09-01",
+      "description": "Ergonomic dual-monitor desk mounts and USB-C docks for Accra HQ",
+      "receipt_url": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "receipt_name": "CompuGhana_Equipment_Invoice.pdf",
+      "status": "approved",
+      "submitted_by": "usr_hr_analyst_01",
+      "approved_by": "usr_hr_head_01",
+      "approved_at": "2026-09-01T15:20:00.000Z",
+      "created_at": "2026-09-01T12:10:00.000Z"
+    },
+    {
+      "id": "exp_seed_006",
+      "company_id": "org_ghana_fintech_01",
+      "category_id": "ec_flight_org_ghana_fintech_01",
+      "related_employee_id": "emp_003",
+      "amount": 4800,
+      "currency": "GHS",
+      "date": "2026-09-02",
+      "description": "Return flight Accra to Nairobi for African Cloud Infrastructure Summit",
+      "receipt_url": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "receipt_name": "KenyaAirways_E-Ticket_Quote.pdf",
+      "status": "pending",
+      "submitted_by": "usr_hr_analyst_01",
+      "approved_by": null,
+      "created_at": "2026-09-02T16:30:00.000Z"
+    },
+    {
+      "id": "exp_seed_007",
+      "company_id": "org_ghana_fintech_01",
+      "category_id": "ec_training_org_ghana_fintech_01",
+      "related_employee_id": "emp_005",
+      "amount": 1650,
+      "currency": "GHS",
+      "date": "2026-09-03",
+      "description": "CIPD HR Analytics & Statutory Compliance Workshop Enrollment",
+      "receipt_url": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "receipt_name": "CIPD_Course_Enrollment.pdf",
+      "status": "pending",
+      "submitted_by": "usr_hr_analyst_01",
+      "approved_by": null,
+      "created_at": "2026-09-03T09:15:00.000Z"
+    },
+    {
+      "id": "exp_seed_008",
+      "company_id": "org_ghana_fintech_01",
+      "category_id": "ec_training_org_ghana_fintech_01",
+      "related_employee_id": "emp_004",
+      "amount": 750,
+      "currency": "USD",
+      "date": "2026-08-25",
+      "description": "AWS Certified Solutions Architect Exam & Official Sandbox Lab voucher",
+      "receipt_url": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "receipt_name": "AWS_Training_Receipt.pdf",
+      "status": "approved",
+      "submitted_by": "usr_hr_analyst_01",
+      "approved_by": "usr_hr_head_01",
+      "approved_at": "2026-08-26T11:00:00.000Z",
+      "created_at": "2026-08-25T14:10:00.000Z"
+    },
+    {
+      "id": "exp_seed_009",
+      "company_id": "org_ghana_fintech_01",
+      "category_id": "ec_recruitment_org_ghana_fintech_01",
+      "related_employee_id": null,
+      "amount": 1200,
+      "currency": "USD",
+      "date": "2026-08-10",
+      "description": "Remote UK Senior Engineer sourcing placement fee (Cord/Hired)",
+      "receipt_url": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "receipt_name": "Remote_Sourcing_Invoice.pdf",
+      "status": "approved",
+      "submitted_by": "usr_hr_head_01",
+      "approved_by": "usr_hr_head_01",
+      "approved_at": "2026-08-10T16:00:00.000Z",
+      "created_at": "2026-08-10T16:00:00.000Z"
+    },
+    {
+      "id": "exp_seed_010",
+      "company_id": "org_ghana_fintech_01",
+      "category_id": "ec_other_org_ghana_fintech_01",
+      "related_employee_id": "emp_004",
+      "amount": 420,
+      "currency": "USD",
+      "date": "2026-09-02",
+      "description": "London Tech Leaders Meetup Sponsorship & Team Networking Dinner",
+      "receipt_url": "data:application/pdf;base64,JVBERi0xLjQKJcOkw7zDtsOfCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9MZW5ndGggNzgKPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgoxMDAgNzAwIFRECihtcGVsbG8gLSBHby1ZYSBIUk1TIFNlY3VyZSBFbXBsb3llZSBEb2N1bWVudCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2MCAwMDAwMCBuIAowMDAwMDAwMTE3IDAwMDAwIG4gCjAwMDAwMDAyMDEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA1Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgoxMzQ5CiUlRU9GCg==",
+      "receipt_name": "London_Meetup_Sponsorship.pdf",
+      "status": "pending",
+      "submitted_by": "usr_hr_analyst_01",
+      "approved_by": null,
+      "created_at": "2026-09-02T19:00:00.000Z"
+    }
+  ],
+  "expense_policies": {
+    "org_ghana_fintech_01": {
+      "restrict_analyst_to_own_expenses": false
+    }
+  },
+  "events": [
+    {
+      "id": "evt_seed_001",
+      "company_id": "org_ghana_fintech_01",
+      "title": "Kwame Nkrumah Memorial Day (National Holiday)",
+      "description": "Statutory public holiday observed across all Ghana operations. Offices closed; critical payment monitoring teams on on-call rotation.",
+      "start_datetime": "2026-09-21T00:00:00.000Z",
+      "end_datetime": "2026-09-21T23:59:59.000Z",
+      "location": "All Ghana Offices (National Observance)",
+      "event_type": "holiday",
+      "visibility_scope": "company",
+      "department_id": null,
+      "training_session_id": null,
+      "created_by": "usr_hr_head_01",
+      "created_at": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "evt_seed_002",
+      "company_id": "org_ghana_fintech_01",
+      "title": "Q3 All-Hands & Product Milestone Review",
+      "description": "Executive briefing on Q3 fintech gross volume, merchant acquisition progress, and cross-border settlement pipeline.",
+      "start_datetime": "2026-09-18T14:00:00.000Z",
+      "end_datetime": "2026-09-18T15:30:00.000Z",
+      "location": "Accra HQ Main Hall & Google Meet (meet.google.com/kora-q3-allhands)",
+      "event_type": "meeting",
+      "visibility_scope": "company",
+      "department_id": null,
+      "training_session_id": null,
+      "created_by": "usr_hr_head_01",
+      "created_at": "2026-09-02T09:00:00.000Z"
+    },
+    {
+      "id": "evt_seed_003",
+      "company_id": "org_ghana_fintech_01",
+      "title": "SOC2 Security & Key Management Training",
+      "description": "Required compliance & security engineering training on automated secrets rotation, encrypted audit trails, and zero-trust credentials.",
+      "start_datetime": "2026-09-15T10:00:00.000Z",
+      "end_datetime": "2026-09-15T12:00:00.000Z",
+      "location": "Engineering Lab 2 & Zoom (zoom.us/j/918273645)",
+      "event_type": "training",
+      "visibility_scope": "department",
+      "department_id": "dept_eng_01",
+      "training_session_id": null,
+      "created_by": "usr_hr_analyst_01",
+      "created_at": "2026-09-03T10:30:00.000Z"
+    },
+    {
+      "id": "evt_seed_004",
+      "company_id": "org_ghana_fintech_01",
+      "title": "People Ops Bi-Weekly Compliance Standup",
+      "description": "Status review on GRA tax withholding filings, pension tier 2 remittance reconciliation, and probation reviews.",
+      "start_datetime": "2026-09-12T11:00:00.000Z",
+      "end_datetime": "2026-09-12T12:00:00.000Z",
+      "location": "HR Conference Room A",
+      "event_type": "meeting",
+      "visibility_scope": "department",
+      "department_id": "dept_people_04",
+      "training_session_id": null,
+      "created_by": "usr_hr_head_01",
+      "created_at": "2026-09-01T11:00:00.000Z"
+    },
+    {
+      "id": "evt_seed_005",
+      "company_id": "org_ghana_fintech_01",
+      "title": "Kora End-of-Quarter Rooftop Social",
+      "description": "Celebrate our Q3 team milestones with evening refreshments, music, games, and team bonding.",
+      "start_datetime": "2026-09-25T17:30:00.000Z",
+      "end_datetime": "2026-09-25T21:00:00.000Z",
+      "location": "Skybar 25 Rooftop, Villaggio Vista, Accra",
+      "event_type": "social",
+      "visibility_scope": "company",
+      "department_id": null,
+      "training_session_id": null,
+      "created_by": "usr_hr_analyst_01",
+      "created_at": "2026-09-02T15:00:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_mtxwf31f_veyz8pug",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "governance_review_due",
+      "title": "Policy Review Scheduled: Anti-Bribery & Corruption Governance Framework",
+      "message": "Governance cycle initialized for \"Anti-Bribery & Corruption Governance Framework\". Review due date is 2026-08-10 (OVERDUE).",
+      "link": "/app?view=governance",
+      "read_at": null,
+      "created_at": "2026-09-12T04:42:13.155Z"
+    },
+    {
+      "id": "notif_mtxwf317_pcg73exc",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "governance_review_due",
+      "title": "Policy Governance Audit Due: Anti-Harassment, Equal Opportunity & Whistleblower Charter",
+      "message": "Governance review for \"Anti-Harassment, Equal Opportunity & Whistleblower Charter\" was due on 2026-07-20 and is overdue for audit. Please review and update lifecycle status.",
+      "link": "/app?view=governance",
+      "read_at": null,
+      "created_at": "2026-09-12T04:42:13.147Z"
+    },
+    {
+      "id": "notif_mtxwf315_igx784kc",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "governance_review_due",
+      "title": "Policy Governance Audit Due: Information Security & Data Protection Standard (GDPR/NDPR)",
+      "message": "Governance review for \"Information Security & Data Protection Standard (GDPR/NDPR)\" was due on 2026-08-01 and is overdue for audit. Please review and update lifecycle status.",
+      "link": "/app?view=governance",
+      "read_at": null,
+      "created_at": "2026-09-12T04:42:13.145Z"
+    },
+    {
+      "id": "notif_mtxv51e2_93ocr627",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "probation_ending",
+      "title": "Probation Ending Soon: Abena Ansah",
+      "message": "Abena Ansah's probation period is ending in 14 day(s) [End Date: 2026-09-26]. HR Head decision (confirm, extend, or terminate) required.",
+      "link": "employees/emp_004",
+      "read_at": null,
+      "created_at": "2026-09-12T04:06:24.842Z"
+    },
+    {
+      "id": "notif_mtxv51dz_ejevw67m",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Deadline Approaching: GRA PAYE Monthly Tax Return Filing & Remittance",
+      "message": "GRA PAYE Monthly Tax Return Filing & Remittance is due in 3 day(s) [Deadline: 2026-09-15]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-12T04:06:24.839Z"
+    },
+    {
+      "id": "notif_mtxv51dy_s4vd5743",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Deadline Approaching: SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance",
+      "message": "SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance is due in 2 day(s) [Deadline: 2026-09-14]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-12T04:06:24.838Z"
+    },
+    {
+      "id": "notif_mtxv51dw_0zfr3xxu",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Overdue: AWS Certified DevOps Renewal - Kofi Boateng",
+      "message": "AWS Certified DevOps Renewal - Kofi Boateng is overdue by 23 day(s) [Deadline: 2026-08-20]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-12T04:06:24.836Z"
+    },
+    {
+      "id": "notif_mtxv51du_jh1c5a5s",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Deadline Approaching: Employment Contract Renewal - Ama Serwaa",
+      "message": "Employment Contract Renewal - Ama Serwaa is due in 13 day(s) [Deadline: 2026-09-25]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-12T04:06:24.834Z"
+    },
+    {
+      "id": "notif_mtqsxfnv_bfhn2nbe",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Deadline Approaching: GRA PAYE Monthly Tax Return Filing & Remittance",
+      "message": "GRA PAYE Monthly Tax Return Filing & Remittance is due in 8 day(s) [Deadline: 2026-09-15]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-07T05:30:07.627Z"
+    },
+    {
+      "id": "notif_mtqsxfnu_siigubev",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Deadline Approaching: SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance",
+      "message": "SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance is due in 7 day(s) [Deadline: 2026-09-14]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-07T05:30:07.626Z"
+    },
+    {
+      "id": "notif_mtqsxfns_23kdl6xc",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Overdue: AWS Certified DevOps Renewal - Kofi Boateng",
+      "message": "AWS Certified DevOps Renewal - Kofi Boateng is overdue by 18 day(s) [Deadline: 2026-08-20]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-07T05:30:07.624Z"
+    },
+    {
+      "id": "notif_mtqsxfnp_dwissaov",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Deadline Approaching: Employment Contract Renewal - Ama Serwaa",
+      "message": "Employment Contract Renewal - Ama Serwaa is due in 18 day(s) [Deadline: 2026-09-25]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-07T05:30:07.621Z"
+    },
+    {
+      "id": "notif_mtp0497p_7rjjqizg",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Deadline Approaching: GRA PAYE Monthly Tax Return Filing & Remittance",
+      "message": "GRA PAYE Monthly Tax Return Filing & Remittance is due in 10 day(s) [Deadline: 2026-09-15]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-05T23:15:50.821Z"
+    },
+    {
+      "id": "notif_mtp0497n_ook9sp4f",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Deadline Approaching: SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance",
+      "message": "SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance is due in 9 day(s) [Deadline: 2026-09-14]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-05T23:15:50.819Z"
+    },
+    {
+      "id": "notif_mtp0497m_dvfmh2rq",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Overdue: AWS Certified DevOps Renewal - Kofi Boateng",
+      "message": "AWS Certified DevOps Renewal - Kofi Boateng is overdue by 16 day(s) [Deadline: 2026-08-20]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-05T23:15:50.818Z"
+    },
+    {
+      "id": "notif_mtp0497k_x2n3odcl",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Deadline Approaching: Employment Contract Renewal - Ama Serwaa",
+      "message": "Employment Contract Renewal - Ama Serwaa is due in 20 day(s) [Deadline: 2026-09-25]. Immediate attention required.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-05T23:15:50.816Z"
+    },
+    {
+      "id": "notif_seed_001",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "compliance_deadline",
+      "title": "Compliance Overdue: AWS Professional Certification",
+      "message": "AWS Professional certification for Kwame Mensah expired 12 days ago. Required for SOC2 compliance checklist.",
+      "link": "compliance",
+      "read_at": null,
+      "created_at": "2026-09-04T08:30:00.000Z"
+    },
+    {
+      "id": "notif_seed_002",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "leave_submitted",
+      "title": "Leave Request Submitted",
+      "message": "Abena Osei requested 4 day(s) of Annual Leave (2026-09-15 to 2026-09-18) [Requires HR Head Approval]",
+      "link": "leave",
+      "read_at": null,
+      "created_at": "2026-09-04T09:15:00.000Z"
+    },
+    {
+      "id": "notif_seed_003",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "type": "expense_submitted",
+      "title": "Expense Submitted for Approval",
+      "message": "analyst submitted expense of GHS 4,200 for \"Flight tickets to Lagos Fintech Summit\"",
+      "link": "expenses",
+      "read_at": null,
+      "created_at": "2026-09-04T10:00:00.000Z"
+    },
+    {
+      "id": "notif_seed_004",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_analyst_01",
+      "type": "task_assigned",
+      "title": "New Task Assigned",
+      "message": "You have been assigned to task \"Collect statutory compliance info: SSNIT Number, TIN & Ghana Card PIN\" (Priority: HIGH)",
+      "link": "tasks",
+      "read_at": null,
+      "created_at": "2026-09-04T10:30:00.000Z"
+    },
+    {
+      "id": "notif_seed_005",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_analyst_01",
+      "type": "event_created",
+      "title": "Company Event: All-Hands Townhall",
+      "message": "All-Hands Quarterly Strategy Townhall scheduled for 2026-09-12 (Main Auditorium & Google Meet)",
+      "link": "events",
+      "read_at": null,
+      "created_at": "2026-09-04T11:00:00.000Z"
+    }
+  ],
+  "email_logs": [
+    {
+      "id": "elog_mtxv51e2_iebvcj84",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[HR Head Decision Required] Probation Review: Abena Ansah",
+      "body": "Hello HR Head,\n\nThis is an automated probation tracking reminder from Go-Ya HRMS:\n\nEmployee: Abena Ansah\nDesignation: Frontend Developer\nProbation End Date: 2026-09-26\nDays Remaining: 14\nStatus: Active Probation\n\nPlease review mid-probation notes and record the end-of-probation review outcome (confirm, extend, or terminate).\n\nReview profile: /employees/emp_004",
+      "type": "probation_ending",
+      "status": "delivered",
+      "sent_at": "2026-09-12T04:06:24.842Z"
+    },
+    {
+      "id": "elog_mtxv51e0_r4nzfjof",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] EXPIRING: GRA PAYE Monthly Tax Return Filing & Remittance",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: GRA PAYE Monthly Tax Return Filing & Remittance\nCategory: statutory_tax\nStatus: ATTENTION REQUIRED\nDeadline: 2026-09-15\nDays Remaining: 3\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-12T04:06:24.840Z"
+    },
+    {
+      "id": "elog_mtxv51dy_nv94j2yp",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] EXPIRING: SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance\nCategory: statutory_tax\nStatus: ATTENTION REQUIRED\nDeadline: 2026-09-14\nDays Remaining: 2\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-12T04:06:24.838Z"
+    },
+    {
+      "id": "elog_mtxv51dx_sv16cbp4",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] OVERDUE: AWS Certified DevOps Renewal - Kofi Boateng",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: AWS Certified DevOps Renewal - Kofi Boateng\nCategory: certifications\nStatus: NON-COMPLIANT (OVERDUE)\nDeadline: 2026-08-20\nDays Remaining: -23\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-12T04:06:24.837Z"
+    },
+    {
+      "id": "elog_mtxv51dv_07k26mua",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] EXPIRING: Employment Contract Renewal - Ama Serwaa",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: Employment Contract Renewal - Ama Serwaa\nCategory: contracts_visas\nStatus: ATTENTION REQUIRED\nDeadline: 2026-09-25\nDays Remaining: 13\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-12T04:06:24.835Z"
+    },
+    {
+      "id": "elog_mtqsxfnw_zn1zg3oz",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] EXPIRING: GRA PAYE Monthly Tax Return Filing & Remittance",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: GRA PAYE Monthly Tax Return Filing & Remittance\nCategory: statutory_tax\nStatus: ATTENTION REQUIRED\nDeadline: 2026-09-15\nDays Remaining: 8\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-07T05:30:07.628Z"
+    },
+    {
+      "id": "elog_mtqsxfnu_getdju17",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] EXPIRING: SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance\nCategory: statutory_tax\nStatus: ATTENTION REQUIRED\nDeadline: 2026-09-14\nDays Remaining: 7\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-07T05:30:07.626Z"
+    },
+    {
+      "id": "elog_mtqsxfnt_25pur8sy",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] OVERDUE: AWS Certified DevOps Renewal - Kofi Boateng",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: AWS Certified DevOps Renewal - Kofi Boateng\nCategory: certifications\nStatus: NON-COMPLIANT (OVERDUE)\nDeadline: 2026-08-20\nDays Remaining: -18\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-07T05:30:07.625Z"
+    },
+    {
+      "id": "elog_mtqsxfnr_rnqmdwbc",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] EXPIRING: Employment Contract Renewal - Ama Serwaa",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: Employment Contract Renewal - Ama Serwaa\nCategory: contracts_visas\nStatus: ATTENTION REQUIRED\nDeadline: 2026-09-25\nDays Remaining: 18\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-07T05:30:07.623Z"
+    },
+    {
+      "id": "elog_mtp0497p_qrz6s5e7",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] EXPIRING: GRA PAYE Monthly Tax Return Filing & Remittance",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: GRA PAYE Monthly Tax Return Filing & Remittance\nCategory: statutory_tax\nStatus: ATTENTION REQUIRED\nDeadline: 2026-09-15\nDays Remaining: 10\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-05T23:15:50.821Z"
+    },
+    {
+      "id": "elog_mtp0497o_0cfa3exr",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] EXPIRING: SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: SSNIT Tier 1 & Tier 2 Monthly Contribution Remittance\nCategory: statutory_tax\nStatus: ATTENTION REQUIRED\nDeadline: 2026-09-14\nDays Remaining: 9\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-05T23:15:50.820Z"
+    },
+    {
+      "id": "elog_mtp0497m_0z21smtm",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] OVERDUE: AWS Certified DevOps Renewal - Kofi Boateng",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: AWS Certified DevOps Renewal - Kofi Boateng\nCategory: certifications\nStatus: NON-COMPLIANT (OVERDUE)\nDeadline: 2026-08-20\nDays Remaining: -16\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-05T23:15:50.818Z"
+    },
+    {
+      "id": "elog_mtp0497l_nei0gw44",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] EXPIRING: Employment Contract Renewal - Ama Serwaa",
+      "body": "Hello HR Administrator,\n\nThis is an automated compliance deadline alert from Go-Ya HRMS:\n\nItem: Employment Contract Renewal - Ama Serwaa\nCategory: contracts_visas\nStatus: ATTENTION REQUIRED\nDeadline: 2026-09-25\nDays Remaining: 20\n\nPlease review and take remediation action in the Compliance Center: /compliance",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-05T23:15:50.817Z"
+    },
+    {
+      "id": "elog_seed_001",
+      "company_id": "org_ghana_fintech_01",
+      "user_id": "usr_hr_head_01",
+      "recipient_email": "ignatius@korapay.com",
+      "subject": "[High Priority HR Compliance Alert] AWS Professional Certification Overdue",
+      "body": "Kwame Mensah AWS certification has expired. Immediate compliance action required.",
+      "type": "compliance_deadline",
+      "status": "delivered",
+      "sent_at": "2026-09-04T08:30:05.000Z"
+    }
+  ],
+  "chat_channels": [
+    {
+      "id": "chan_seed_1on1",
+      "company_id": "org_ghana_fintech_01",
+      "name": null,
+      "is_group": false,
+      "created_by": "usr_hr_head_01",
+      "created_at": "2026-09-04T10:00:00.000Z"
+    },
+    {
+      "id": "chan_seed_group",
+      "company_id": "org_ghana_fintech_01",
+      "name": "HR Operations & People Strategy",
+      "is_group": true,
+      "created_by": "usr_hr_head_01",
+      "created_at": "2026-09-04T09:00:00.000Z"
+    }
+  ],
+  "chat_channel_members": [
+    {
+      "channel_id": "chan_seed_1on1",
+      "user_id": "usr_hr_head_01"
+    },
+    {
+      "channel_id": "chan_seed_1on1",
+      "user_id": "usr_hr_analyst_01"
+    },
+    {
+      "channel_id": "chan_seed_group",
+      "user_id": "usr_hr_head_01"
+    },
+    {
+      "channel_id": "chan_seed_group",
+      "user_id": "usr_hr_analyst_01"
+    }
+  ],
+  "chat_messages": [
+    {
+      "id": "msg_seed_001",
+      "channel_id": "chan_seed_1on1",
+      "sender_id": "usr_hr_head_01",
+      "content": "Hi Ama, could you review the pending leave requests and onboarding status for our new engineering cohort?",
+      "created_at": "2026-09-04T10:05:00.000Z"
+    },
+    {
+      "id": "msg_seed_002",
+      "channel_id": "chan_seed_1on1",
+      "sender_id": "usr_hr_analyst_01",
+      "content": "Sure thing, Ignatius! All compliance documents and biodata for the new hires have been verified and logged.",
+      "created_at": "2026-09-04T10:08:00.000Z"
+    },
+    {
+      "id": "msg_seed_003",
+      "channel_id": "chan_seed_1on1",
+      "sender_id": "usr_hr_head_01",
+      "content": "Excellent work. Thanks for the quick turnaround.",
+      "created_at": "2026-09-04T10:10:00.000Z"
+    },
+    {
+      "id": "msg_seed_004",
+      "channel_id": "chan_seed_group",
+      "sender_id": "usr_hr_head_01",
+      "content": "Welcome to the HR Operations & People Strategy channel. Let us use this space for quick syncs, hiring updates, and team discussions.",
+      "created_at": "2026-09-04T09:15:00.000Z"
+    },
+    {
+      "id": "msg_mtp0g4ld_9t3xbi0t",
+      "channel_id": "chan_seed_1on1",
+      "sender_id": "usr_hr_head_01",
+      "content": "Checking in on the engineering recruitment pipeline.",
+      "created_at": "2026-09-05T23:25:04.705Z"
+    }
+  ],
+  "demo_requests": [
+    {
+      "id": "demo_mtqt9pwx_cgrz5uvd",
+      "name": "Ama Asantewaa",
+      "email": "ama@ghanapay.com",
+      "company_name": "GhanaPay Ltd",
+      "team_size": "51-150",
+      "message": "Looking to migrate 80 staff from spreadsheets with SSNIT and PAYE automation.",
+      "created_at": "2026-09-07T05:39:40.785Z"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub_kora_001",
+      "company_id": "org_ghana_fintech_01",
+      "plan": "professional",
+      "billing_cycle": "annual",
+      "employee_limit": 50,
+      "status": "active",
+      "trial_ends_at": null,
+      "current_period_end": "2027-06-19T04:06:24.605Z"
+    },
+    {
+      "id": "sub_goldkey_002",
+      "company_id": "org_goldkey_02",
+      "plan": "starter",
+      "billing_cycle": "monthly",
+      "employee_limit": 25,
+      "status": "active",
+      "trial_ends_at": null,
+      "current_period_end": "2026-10-02T04:06:24.605Z"
+    },
+    {
+      "id": "sub_payswitch_003",
+      "company_id": "org_payswitch_03",
+      "plan": "enterprise",
+      "billing_cycle": "annual",
+      "employee_limit": 200,
+      "status": "active",
+      "trial_ends_at": null,
+      "current_period_end": "2027-07-29T04:06:24.605Z"
+    },
+    {
+      "id": "sub_afrilog_004",
+      "company_id": "org_afrilog_04",
+      "plan": "free_trial",
+      "billing_cycle": "monthly",
+      "employee_limit": 10,
+      "status": "trialing",
+      "trial_ends_at": "2026-09-19T04:06:24.605Z",
+      "current_period_end": "2026-09-19T04:06:24.605Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv_kora_2026_01",
+      "company_id": "org_ghana_fintech_01",
+      "amount": 9120,
+      "currency": "GHS",
+      "status": "paid",
+      "period_start": "2026-06-19T04:06:24.606Z",
+      "period_end": "2027-06-19T04:06:24.606Z",
+      "paid_at": "2026-06-19T04:06:24.606Z",
+      "description": "Professional Plan (Annual) - 50 Employee Seats",
+      "invoice_number": "INV-2026-0041"
+    },
+    {
+      "id": "inv_kora_2025_01",
+      "company_id": "org_ghana_fintech_01",
+      "amount": 9120,
+      "currency": "GHS",
+      "status": "paid",
+      "period_start": "2025-06-19T04:06:24.606Z",
+      "period_end": "2026-06-19T04:06:24.606Z",
+      "paid_at": "2025-06-19T04:06:24.606Z",
+      "description": "Professional Plan (Annual) - 50 Employee Seats",
+      "invoice_number": "INV-2025-0018"
+    }
+  ],
+  "payment_methods": [
+    {
+      "id": "pm_kora_01",
+      "company_id": "org_ghana_fintech_01",
+      "provider_ref": "pstk_auth_momo_00192",
+      "last4": "4821",
+      "brand": "MTN Mobile Money",
+      "is_default": true,
+      "created_at": "2026-06-19T04:06:24.606Z"
+    },
+    {
+      "id": "pm_kora_02",
+      "company_id": "org_ghana_fintech_01",
+      "provider_ref": "pstk_auth_card_00831",
+      "last4": "4242",
+      "brand": "Visa",
+      "is_default": false,
+      "created_at": "2026-02-24T04:06:24.606Z"
+    }
+  ],
+  "platform_admins": [
+    {
+      "id": "padmin_seed_001",
+      "user_id": "usr_hr_head_01",
+      "created_at": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "support_notes": [
+    {
+      "id": "snote_001",
+      "company_id": "org_ghana_fintech_01",
+      "note": "Initial tenant onboarding completed. Verified SSNIT Tier 1 & 2 formula and Ghana Card validation rules.",
+      "author_email": "ignatius@korapay.com",
+      "created_at": "2026-08-20T10:00:00.000Z"
+    },
+    {
+      "id": "snote_002",
+      "company_id": "org_payswitch_03",
+      "note": "Enterprise tier custom SLA active. Dedicated compliance account manager assigned.",
+      "author_email": "operator@goyahrms.com",
+      "created_at": "2026-08-25T14:20:00.000Z"
+    }
+  ],
+  "performance_reviews": [
+    {
+      "id": "pr_seed_001",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "cycle": "Q1",
+      "rating": 4.8,
+      "comments": "Exceptional delivery on core multi-currency payroll architecture and Ghana statutory engine. Exceeded sprint velocity targets by 25%.",
+      "reviewed_by": "ignatius@korapay.com",
+      "status": "finalized",
+      "bsc_completed": true,
+      "bsc_document_url": "https://docs.google.com/document/d/bsc_kwame_2026_q1",
+      "bsc_score": 96,
+      "created_at": "2026-03-31T12:00:00.000Z",
+      "finalized_at": "2026-04-02T10:00:00.000Z",
+      "finalized_by": "ignatius@korapay.com"
+    },
+    {
+      "id": "pr_seed_002",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "cycle": "mid_year",
+      "rating": 4.5,
+      "comments": "Outstanding engineering leadership across the team. Successfully conducted technical reviews and mentored 2 junior developers on security.",
+      "reviewed_by": "ignatius@korapay.com",
+      "status": "finalized",
+      "bsc_completed": true,
+      "bsc_document_url": "https://docs.google.com/document/d/bsc_kwame_2026_my",
+      "bsc_score": 92,
+      "created_at": "2026-06-30T14:30:00.000Z",
+      "finalized_at": "2026-07-02T09:15:00.000Z",
+      "finalized_by": "ignatius@korapay.com"
+    },
+    {
+      "id": "pr_seed_003",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "cycle": "Q3",
+      "rating": 4.2,
+      "comments": "Draft quarterly evaluation. Maintained high code velocity while participating in customer onboarding architecture reviews.",
+      "reviewed_by": "hr.analyst@korapay.com",
+      "status": "draft",
+      "bsc_completed": false,
+      "created_at": "2026-09-02T11:00:00.000Z"
+    },
+    {
+      "id": "pr_seed_004",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "cycle": "Q1",
+      "rating": 4.4,
+      "comments": "Spearheaded user onboarding revamp resulting in 18% reduction in tenant activation drop-off.",
+      "reviewed_by": "ignatius@korapay.com",
+      "status": "finalized",
+      "bsc_completed": true,
+      "bsc_document_url": "https://docs.google.com/document/d/bsc_akua_2026_q1",
+      "bsc_score": 90,
+      "created_at": "2026-03-30T10:00:00.000Z",
+      "finalized_at": "2026-04-01T16:00:00.000Z",
+      "finalized_by": "ignatius@korapay.com"
+    },
+    {
+      "id": "pr_seed_005",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "cycle": "mid_year",
+      "rating": 4.6,
+      "comments": "Outstanding cross-functional alignment between compliance, engineering, and customer success teams.",
+      "reviewed_by": "ignatius@korapay.com",
+      "status": "finalized",
+      "bsc_completed": true,
+      "bsc_document_url": "https://docs.google.com/document/d/bsc_akua_2026_my",
+      "bsc_score": 94,
+      "created_at": "2026-06-28T15:00:00.000Z",
+      "finalized_at": "2026-07-03T11:30:00.000Z",
+      "finalized_by": "ignatius@korapay.com"
+    },
+    {
+      "id": "pr_seed_006",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "cycle": "mid_year",
+      "rating": 3.8,
+      "comments": "Solid operational management. Recommended to automate vendor invoice intake for faster turnaround.",
+      "reviewed_by": "hr.analyst@korapay.com",
+      "status": "draft",
+      "bsc_completed": false,
+      "created_at": "2026-07-05T09:00:00.000Z"
+    }
+  ],
+  "pdp_goals": [
+    {
+      "id": "pdp_seed_001",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "goal": "Complete AWS Solutions Architect - Associate certification to optimize cloud container sizing",
+      "target_date": "2026-10-31",
+      "status": "in_progress",
+      "created_at": "2026-02-15T09:00:00.000Z"
+    },
+    {
+      "id": "pdp_seed_002",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "goal": "Publish internal technical documentation on GRA PAYE tax band cumulative computation",
+      "target_date": "2026-08-15",
+      "status": "complete",
+      "created_at": "2026-03-01T10:00:00.000Z"
+    },
+    {
+      "id": "pdp_seed_003",
+      "employee_id": "emp_000",
+      "company_id": "org_ghana_fintech_01",
+      "goal": "Host quarterly knowledge sharing session on TypeScript type safety and error boundaries",
+      "target_date": "2026-11-30",
+      "status": "not_started",
+      "created_at": "2026-07-10T14:00:00.000Z"
+    },
+    {
+      "id": "pdp_seed_004",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "goal": "Complete Pragmatic Institute Certified Product Masterclass",
+      "target_date": "2026-10-15",
+      "status": "in_progress",
+      "created_at": "2026-02-01T08:00:00.000Z"
+    },
+    {
+      "id": "pdp_seed_005",
+      "employee_id": "emp_001",
+      "company_id": "org_ghana_fintech_01",
+      "goal": "Establish standardized customer interview feedback repository in Notion",
+      "target_date": "2026-07-31",
+      "status": "complete",
+      "created_at": "2026-04-12T10:00:00.000Z"
+    },
+    {
+      "id": "pdp_seed_006",
+      "employee_id": "emp_003",
+      "company_id": "org_ghana_fintech_01",
+      "goal": "Complete Advanced Excel & Financial Modeling workshop",
+      "target_date": "2026-09-30",
+      "status": "in_progress",
+      "created_at": "2026-05-10T11:00:00.000Z"
+    }
+  ],
+  "probation_records": [
+    {
+      "id": "prob_seed_001",
+      "employee_id": "emp_004",
+      "company_id": "org_ghana_fintech_01",
+      "probation_period_months": 3,
+      "probation_start": "2026-06-28",
+      "probation_end": "2026-09-26",
+      "original_probation_end": "2026-09-26",
+      "extension_months": 0,
+      "mid_review_date": "2026-08-13",
+      "mid_reviewer": "ignatius@korapay.com",
+      "mid_review_notes": "Demonstrating strong engineering velocity across frontend components. Meets design fidelity criteria. Recommended to focus on edge-case testing before full confirmation.",
+      "end_review_date": null,
+      "end_reviewer": null,
+      "outcome": null,
+      "confirmation_date": null,
+      "remarks": null,
+      "created_at": "2026-06-28T04:06:24.608Z"
+    }
+  ],
+  "conduct_incidents": [
+    {
+      "id": "cinc_seed_001",
+      "company_id": "org_ghana_fintech_01",
+      "date_reported": "2026-09-04",
+      "reporter": "Internal Compliance Officer / Anonymous Whistleblower",
+      "witnesses": "Akua Osei (VP Product), Cloud Access Logs",
+      "incident_type": "Policy Violation",
+      "severity": "high",
+      "description": "Unauthorized export of customer billing transactional records to an unapproved external personal cloud storage drive. Incident detected during automated DLP anomaly scanning.",
+      "related_employee_id": "emp_002",
+      "department_id": "dept_growth_03",
+      "status": "investigating",
+      "investigation_owner": "ignatius@korapay.com",
+      "action_taken": "Access credentials revoked immediately. Hardware sequestered for forensic analysis; formal inquiry hearing scheduled.",
+      "created_by": "usr_hr_head_01",
+      "created_at": "2026-09-04T09:30:00.000Z",
+      "updated_at": "2026-09-05T14:20:00.000Z"
+    },
+    {
+      "id": "cinc_seed_002",
+      "company_id": "org_ghana_fintech_01",
+      "date_reported": "2026-09-01",
+      "reporter": "Kwame Mensah (Lead Engineer)",
+      "witnesses": "Engineering Team during Daily Standup",
+      "incident_type": "Insubordination & Unprofessional Conduct",
+      "severity": "medium",
+      "description": "Repeated aggressive outbursts, verbal disruption during sprint planning, and deliberate refusal to implement mandatory security audit remediation items.",
+      "related_employee_id": "emp_004",
+      "department_id": "dept_eng_01",
+      "status": "open",
+      "investigation_owner": "ignatius@korapay.com",
+      "action_taken": null,
+      "created_by": "usr_hr_head_01",
+      "created_at": "2026-09-01T11:15:00.000Z",
+      "updated_at": "2026-09-01T11:15:00.000Z"
+    },
+    {
+      "id": "cinc_seed_003",
+      "company_id": "org_ghana_fintech_01",
+      "date_reported": "2026-08-10",
+      "reporter": "Ama Serwaa (Finance Manager)",
+      "witnesses": "Accounts Payable Team",
+      "incident_type": "Attendance Misconduct",
+      "severity": "low",
+      "description": "Unreported absence spanning three consecutive business days following long weekend without statutory notification or sick leave documentation.",
+      "related_employee_id": "emp_003",
+      "department_id": "dept_people_04",
+      "status": "resolved",
+      "investigation_owner": "ignatius@korapay.com",
+      "action_taken": "Formal First Written Warning documented in personnel file and salary deduction applied for 3 unexcused days per company handbook.",
+      "created_by": "usr_hr_head_01",
+      "created_at": "2026-08-10T08:00:00.000Z",
+      "updated_at": "2026-08-15T16:00:00.000Z"
+    }
+  ],
+  "conduct_audit_logs": [
+    {
+      "id": "caudit_seed_001",
+      "company_id": "org_ghana_fintech_01",
+      "incident_id": "cinc_seed_001",
+      "previous_status": null,
+      "new_status": "open",
+      "previous_action_taken": null,
+      "new_action_taken": null,
+      "actor_id": "usr_hr_head_01",
+      "actor_name": "ignatius@korapay.com",
+      "actor_role": "hr_head",
+      "notes": "Initial formal conduct incident logged from internal whistleblower submission.",
+      "timestamp": "2026-09-04T09:30:00.000Z"
+    },
+    {
+      "id": "caudit_seed_002",
+      "company_id": "org_ghana_fintech_01",
+      "incident_id": "cinc_seed_001",
+      "previous_status": "open",
+      "new_status": "investigating",
+      "previous_action_taken": null,
+      "new_action_taken": "Access credentials revoked immediately. Hardware sequestered for forensic analysis; formal inquiry hearing scheduled.",
+      "actor_id": "usr_hr_head_01",
+      "actor_name": "ignatius@korapay.com",
+      "actor_role": "hr_head",
+      "notes": "Investigation commenced. Security team engaged to audit cloud storage access tokens.",
+      "timestamp": "2026-09-05T14:20:00.000Z"
+    },
+    {
+      "id": "caudit_seed_003",
+      "company_id": "org_ghana_fintech_01",
+      "incident_id": "cinc_seed_002",
+      "previous_status": null,
+      "new_status": "open",
+      "previous_action_taken": null,
+      "new_action_taken": null,
+      "actor_id": "usr_hr_head_01",
+      "actor_name": "ignatius@korapay.com",
+      "actor_role": "hr_head",
+      "notes": "Incident opened following report by engineering lead.",
+      "timestamp": "2026-09-01T11:15:00.000Z"
+    },
+    {
+      "id": "caudit_seed_004",
+      "company_id": "org_ghana_fintech_01",
+      "incident_id": "cinc_seed_003",
+      "previous_status": "investigating",
+      "new_status": "resolved",
+      "previous_action_taken": null,
+      "new_action_taken": "Formal First Written Warning documented in personnel file and salary deduction applied for 3 unexcused days per company handbook.",
+      "actor_id": "usr_hr_head_01",
+      "actor_name": "ignatius@korapay.com",
+      "actor_role": "hr_head",
+      "notes": "Employee attended hearing, admitted infraction, and accepted disciplinary warning.",
+      "timestamp": "2026-08-15T16:00:00.000Z"
+    }
+  ],
+  "policies": [
+    {
+      "id": "pol_seed_001",
+      "company_id": "org_ghana_fintech_01",
+      "name": "2026 Code of Conduct & Business Ethics",
+      "version": "v2.1",
+      "issue_date": "2026-01-10",
+      "document_id": "doc_001"
+    },
+    {
+      "id": "pol_seed_002",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Information Security & Data Protection Policy (GDPR / NDPR)",
+      "version": "v3.0",
+      "issue_date": "2026-02-01",
+      "document_id": "doc_002"
+    },
+    {
+      "id": "pol_seed_003",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Remote Work & Digital Workplace Policy",
+      "version": "v1.4",
+      "issue_date": "2026-05-15",
+      "document_id": "doc_003"
+    },
+    {
+      "id": "pol_seed_004",
+      "company_id": "org_ghana_fintech_01",
+      "name": "Anti-Harassment, Equality & Whistleblower Policy",
+      "version": "v2.0",
+      "issue_date": "2026-06-01",
+      "document_id": null
+    }
+  ],
+  "policy_acknowledgements": [
+    {
+      "id": "pack_001_0",
+      "policy_id": "pol_seed_001",
+      "employee_id": "emp_000",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-01-12",
+      "acknowledgment_method": "in_app",
+      "follow_up_required": false,
+      "created_at": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "pack_001_1",
+      "policy_id": "pol_seed_001",
+      "employee_id": "emp_001",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-01-14",
+      "acknowledgment_method": "in_app",
+      "follow_up_required": false,
+      "created_at": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "pack_001_2",
+      "policy_id": "pol_seed_001",
+      "employee_id": "emp_002",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-01-15",
+      "acknowledgment_method": "email",
+      "follow_up_required": false,
+      "created_at": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "pack_001_3",
+      "policy_id": "pol_seed_001",
+      "employee_id": "emp_003",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-01-18",
+      "acknowledgment_method": "paper",
+      "follow_up_required": false,
+      "created_at": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "pack_001_4",
+      "policy_id": "pol_seed_001",
+      "employee_id": "emp_004",
+      "acknowledged": false,
+      "acknowledgment_date": null,
+      "acknowledgment_method": null,
+      "follow_up_required": true,
+      "created_at": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "pack_001_5",
+      "policy_id": "pol_seed_001",
+      "employee_id": "emp_005",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-01-20",
+      "acknowledgment_method": "in_app",
+      "follow_up_required": false,
+      "created_at": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "pack_002_0",
+      "policy_id": "pol_seed_002",
+      "employee_id": "emp_000",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-02-05",
+      "acknowledgment_method": "in_app",
+      "follow_up_required": false,
+      "created_at": "2026-02-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_002_1",
+      "policy_id": "pol_seed_002",
+      "employee_id": "emp_001",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-02-06",
+      "acknowledgment_method": "in_app",
+      "follow_up_required": false,
+      "created_at": "2026-02-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_002_2",
+      "policy_id": "pol_seed_002",
+      "employee_id": "emp_002",
+      "acknowledged": false,
+      "acknowledgment_date": null,
+      "acknowledgment_method": null,
+      "follow_up_required": true,
+      "created_at": "2026-02-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_002_3",
+      "policy_id": "pol_seed_002",
+      "employee_id": "emp_003",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-02-10",
+      "acknowledgment_method": "email",
+      "follow_up_required": false,
+      "created_at": "2026-02-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_002_4",
+      "policy_id": "pol_seed_002",
+      "employee_id": "emp_004",
+      "acknowledged": false,
+      "acknowledgment_date": null,
+      "acknowledgment_method": null,
+      "follow_up_required": true,
+      "created_at": "2026-02-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_002_5",
+      "policy_id": "pol_seed_002",
+      "employee_id": "emp_005",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-02-08",
+      "acknowledgment_method": "in_app",
+      "follow_up_required": false,
+      "created_at": "2026-02-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_003_0",
+      "policy_id": "pol_seed_003",
+      "employee_id": "emp_000",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-05-18",
+      "acknowledgment_method": "in_app",
+      "follow_up_required": false,
+      "created_at": "2026-05-15T09:00:00.000Z"
+    },
+    {
+      "id": "pack_003_1",
+      "policy_id": "pol_seed_003",
+      "employee_id": "emp_001",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-05-20",
+      "acknowledgment_method": "in_app",
+      "follow_up_required": false,
+      "created_at": "2026-05-15T09:00:00.000Z"
+    },
+    {
+      "id": "pack_003_2",
+      "policy_id": "pol_seed_003",
+      "employee_id": "emp_002",
+      "acknowledged": false,
+      "acknowledgment_date": null,
+      "acknowledgment_method": null,
+      "follow_up_required": false,
+      "created_at": "2026-05-15T09:00:00.000Z"
+    },
+    {
+      "id": "pack_003_3",
+      "policy_id": "pol_seed_003",
+      "employee_id": "emp_003",
+      "acknowledged": false,
+      "acknowledgment_date": null,
+      "acknowledgment_method": null,
+      "follow_up_required": true,
+      "created_at": "2026-05-15T09:00:00.000Z"
+    },
+    {
+      "id": "pack_003_4",
+      "policy_id": "pol_seed_003",
+      "employee_id": "emp_004",
+      "acknowledged": false,
+      "acknowledgment_date": null,
+      "acknowledgment_method": null,
+      "follow_up_required": false,
+      "created_at": "2026-05-15T09:00:00.000Z"
+    },
+    {
+      "id": "pack_003_5",
+      "policy_id": "pol_seed_003",
+      "employee_id": "emp_005",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-05-22",
+      "acknowledgment_method": "paper",
+      "follow_up_required": false,
+      "created_at": "2026-05-15T09:00:00.000Z"
+    },
+    {
+      "id": "pack_004_0",
+      "policy_id": "pol_seed_004",
+      "employee_id": "emp_000",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-06-03",
+      "acknowledgment_method": "in_app",
+      "follow_up_required": false,
+      "created_at": "2026-06-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_004_1",
+      "policy_id": "pol_seed_004",
+      "employee_id": "emp_001",
+      "acknowledged": true,
+      "acknowledgment_date": "2026-06-05",
+      "acknowledgment_method": "in_app",
+      "follow_up_required": false,
+      "created_at": "2026-06-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_004_2",
+      "policy_id": "pol_seed_004",
+      "employee_id": "emp_002",
+      "acknowledged": false,
+      "acknowledgment_date": null,
+      "acknowledgment_method": null,
+      "follow_up_required": true,
+      "created_at": "2026-06-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_004_3",
+      "policy_id": "pol_seed_004",
+      "employee_id": "emp_003",
+      "acknowledged": false,
+      "acknowledgment_date": null,
+      "acknowledgment_method": null,
+      "follow_up_required": true,
+      "created_at": "2026-06-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_004_4",
+      "policy_id": "pol_seed_004",
+      "employee_id": "emp_004",
+      "acknowledged": false,
+      "acknowledgment_date": null,
+      "acknowledgment_method": null,
+      "follow_up_required": true,
+      "created_at": "2026-06-01T09:00:00.000Z"
+    },
+    {
+      "id": "pack_004_5",
+      "policy_id": "pol_seed_004",
+      "employee_id": "emp_005",
+      "acknowledged": false,
+      "acknowledgment_date": null,
+      "acknowledgment_method": null,
+      "follow_up_required": false,
+      "created_at": "2026-06-01T09:00:00.000Z"
+    }
+  ],
+  "engagement_surveys": [
+    {
+      "id": "survey_001",
+      "company_id": "org_ghana_fintech_01",
+      "title": "Q3 2026 Workforce Engagement & Culture Pulse",
+      "description": "Anonymous company-wide pulse survey assessing overall morale, leadership communication, career growth, and flexible work support.",
+      "target_department_id": null,
+      "is_anonymous": true,
+      "opens_at": "2026-08-15T00:00:00.000Z",
+      "closes_at": "2026-10-15T23:59:59.000Z",
+      "created_by": "usr_001",
+      "created_at": "2026-08-14T10:00:00.000Z"
+    },
+    {
+      "id": "survey_002",
+      "company_id": "org_ghana_fintech_01",
+      "title": "Engineering Stack & Tooling Pulse",
+      "description": "Targeted survey assessing developer productivity, deployment cadence, and internal documentation.",
+      "target_department_id": "dept_eng_01",
+      "is_anonymous": true,
+      "opens_at": "2026-09-01T00:00:00.000Z",
+      "closes_at": "2026-10-31T23:59:59.000Z",
+      "created_by": "usr_002",
+      "created_at": "2026-08-30T14:30:00.000Z"
+    }
+  ],
+  "survey_questions": [
+    {
+      "id": "sq_001_1",
+      "survey_id": "survey_001",
+      "question_text": "Overall, how energized and engaged do you feel in your role at Zeepay this quarter?",
+      "question_type": "rating",
+      "options": null
+    },
+    {
+      "id": "sq_001_2",
+      "survey_id": "survey_001",
+      "question_text": "My direct manager provides actionable feedback and clear goals for my work.",
+      "question_type": "rating",
+      "options": null
+    },
+    {
+      "id": "sq_001_3",
+      "survey_id": "survey_001",
+      "question_text": "Which working arrangement best supports your productivity and wellbeing?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Hybrid (2–3 days in-office, flexible remote)",
+        "Primarily Office-based",
+        "Fully Remote / Distributed",
+        "Flexible Hours & Outcome-based"
+      ]
+    },
+    {
+      "id": "sq_001_4",
+      "survey_id": "survey_001",
+      "question_text": "I have the necessary tools, hardware, and administrative support to excel in my job.",
+      "question_type": "rating",
+      "options": null
+    },
+    {
+      "id": "sq_001_5",
+      "survey_id": "survey_001",
+      "question_text": "What organizational priority should leadership focus on most in the next quarter?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Career Growth & Structured Mentorship",
+        "Cross-department Communication & Transparency",
+        "Work-Life Balance & Sustainable Workloads",
+        "Competitive Compensation & Recognition"
+      ]
+    },
+    {
+      "id": "sq_002_1",
+      "survey_id": "survey_002",
+      "question_text": "How satisfied are you with our continuous integration and automated test speed?",
+      "question_type": "rating",
+      "options": null
+    },
+    {
+      "id": "sq_002_2",
+      "survey_id": "survey_002",
+      "question_text": "What is currently the biggest friction point in our development cycle?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Flaky or slow test environments",
+        "Lack of clear API documentation",
+        "Cross-team blockers & approval delays",
+        "Technical debt in legacy services"
+      ]
+    },
+    {
+      "id": "sq_002_3",
+      "survey_id": "survey_002",
+      "question_text": "Peer code reviews are constructive, timely, and help me grow as an engineer.",
+      "question_type": "rating",
+      "options": null
+    }
+  ],
+  "survey_responses": [
+    {
+      "id": "sresp_001_1",
+      "survey_id": "survey_001",
+      "respondent_employee_id": null,
+      "submitted_at": "2026-08-18T11:20:00.000Z"
+    },
+    {
+      "id": "sresp_001_2",
+      "survey_id": "survey_001",
+      "respondent_employee_id": null,
+      "submitted_at": "2026-08-19T14:45:00.000Z"
+    },
+    {
+      "id": "sresp_001_3",
+      "survey_id": "survey_001",
+      "respondent_employee_id": null,
+      "submitted_at": "2026-08-22T09:10:00.000Z"
+    },
+    {
+      "id": "sresp_001_4",
+      "survey_id": "survey_001",
+      "respondent_employee_id": null,
+      "submitted_at": "2026-08-25T16:30:00.000Z"
+    },
+    {
+      "id": "sresp_002_1",
+      "survey_id": "survey_002",
+      "respondent_employee_id": null,
+      "submitted_at": "2026-09-03T10:15:00.000Z"
+    },
+    {
+      "id": "sresp_002_2",
+      "survey_id": "survey_002",
+      "respondent_employee_id": null,
+      "submitted_at": "2026-09-04T13:40:00.000Z"
+    },
+    {
+      "id": "sresp_mtxw12df_382edzy5",
+      "survey_id": "survey_001",
+      "respondent_employee_id": null,
+      "submitted_at": "2026-09-12T04:31:19.107Z"
+    }
+  ],
+  "survey_answers": [
+    {
+      "id": "sans_001_1_1",
+      "response_id": "sresp_001_1",
+      "question_id": "sq_001_1",
+      "answer_value": "5"
+    },
+    {
+      "id": "sans_001_1_2",
+      "response_id": "sresp_001_1",
+      "question_id": "sq_001_2",
+      "answer_value": "4"
+    },
+    {
+      "id": "sans_001_1_3",
+      "response_id": "sresp_001_1",
+      "question_id": "sq_001_3",
+      "answer_value": "Hybrid (2–3 days in-office, flexible remote)"
+    },
+    {
+      "id": "sans_001_1_4",
+      "response_id": "sresp_001_1",
+      "question_id": "sq_001_4",
+      "answer_value": "4"
+    },
+    {
+      "id": "sans_001_1_5",
+      "response_id": "sresp_001_1",
+      "question_id": "sq_001_5",
+      "answer_value": "Career Growth & Structured Mentorship"
+    },
+    {
+      "id": "sans_001_2_1",
+      "response_id": "sresp_001_2",
+      "question_id": "sq_001_1",
+      "answer_value": "4"
+    },
+    {
+      "id": "sans_001_2_2",
+      "response_id": "sresp_001_2",
+      "question_id": "sq_001_2",
+      "answer_value": "5"
+    },
+    {
+      "id": "sans_001_2_3",
+      "response_id": "sresp_001_2",
+      "question_id": "sq_001_3",
+      "answer_value": "Hybrid (2–3 days in-office, flexible remote)"
+    },
+    {
+      "id": "sans_001_2_4",
+      "response_id": "sresp_001_2",
+      "question_id": "sq_001_4",
+      "answer_value": "5"
+    },
+    {
+      "id": "sans_001_2_5",
+      "response_id": "sresp_001_2",
+      "question_id": "sq_001_5",
+      "answer_value": "Competitive Compensation & Recognition"
+    },
+    {
+      "id": "sans_001_3_1",
+      "response_id": "sresp_001_3",
+      "question_id": "sq_001_1",
+      "answer_value": "4"
+    },
+    {
+      "id": "sans_001_3_2",
+      "response_id": "sresp_001_3",
+      "question_id": "sq_001_2",
+      "answer_value": "4"
+    },
+    {
+      "id": "sans_001_3_3",
+      "response_id": "sresp_001_3",
+      "question_id": "sq_001_3",
+      "answer_value": "Fully Remote / Distributed"
+    },
+    {
+      "id": "sans_001_3_4",
+      "response_id": "sresp_001_3",
+      "question_id": "sq_001_4",
+      "answer_value": "4"
+    },
+    {
+      "id": "sans_001_3_5",
+      "response_id": "sresp_001_3",
+      "question_id": "sq_001_5",
+      "answer_value": "Cross-department Communication & Transparency"
+    },
+    {
+      "id": "sans_001_4_1",
+      "response_id": "sresp_001_4",
+      "question_id": "sq_001_1",
+      "answer_value": "3"
+    },
+    {
+      "id": "sans_001_4_2",
+      "response_id": "sresp_001_4",
+      "question_id": "sq_001_2",
+      "answer_value": "4"
+    },
+    {
+      "id": "sans_001_4_3",
+      "response_id": "sresp_001_4",
+      "question_id": "sq_001_3",
+      "answer_value": "Hybrid (2–3 days in-office, flexible remote)"
+    },
+    {
+      "id": "sans_001_4_4",
+      "response_id": "sresp_001_4",
+      "question_id": "sq_001_4",
+      "answer_value": "3"
+    },
+    {
+      "id": "sans_001_4_5",
+      "response_id": "sresp_001_4",
+      "question_id": "sq_001_5",
+      "answer_value": "Work-Life Balance & Sustainable Workloads"
+    },
+    {
+      "id": "sans_002_1_1",
+      "response_id": "sresp_002_1",
+      "question_id": "sq_002_1",
+      "answer_value": "4"
+    },
+    {
+      "id": "sans_002_1_2",
+      "response_id": "sresp_002_1",
+      "question_id": "sq_002_2",
+      "answer_value": "Flaky or slow test environments"
+    },
+    {
+      "id": "sans_002_1_3",
+      "response_id": "sresp_002_1",
+      "question_id": "sq_002_3",
+      "answer_value": "5"
+    },
+    {
+      "id": "sans_002_2_1",
+      "response_id": "sresp_002_2",
+      "question_id": "sq_002_1",
+      "answer_value": "3"
+    },
+    {
+      "id": "sans_002_2_2",
+      "response_id": "sresp_002_2",
+      "question_id": "sq_002_2",
+      "answer_value": "Technical debt in legacy services"
+    },
+    {
+      "id": "sans_002_2_3",
+      "response_id": "sresp_002_2",
+      "question_id": "sq_002_3",
+      "answer_value": "4"
+    },
+    {
+      "id": "sans_mtxw12df_jftfdx0s",
+      "response_id": "sresp_mtxw12df_382edzy5",
+      "question_id": "sq_001_1",
+      "answer_value": "5"
+    },
+    {
+      "id": "sans_mtxw12df_p98hw5f0",
+      "response_id": "sresp_mtxw12df_382edzy5",
+      "question_id": "sq_001_2",
+      "answer_value": "4"
+    },
+    {
+      "id": "sans_mtxw12df_b4rji2y7",
+      "response_id": "sresp_mtxw12df_382edzy5",
+      "question_id": "sq_001_3",
+      "answer_value": "Hybrid (2–3 days in-office, flexible remote)"
+    },
+    {
+      "id": "sans_mtxw12df_pkjf1aim",
+      "response_id": "sresp_mtxw12df_382edzy5",
+      "question_id": "sq_001_4",
+      "answer_value": "5"
+    },
+    {
+      "id": "sans_mtxw12df_7exe4x8y",
+      "response_id": "sresp_mtxw12df_382edzy5",
+      "question_id": "sq_001_5",
+      "answer_value": "Career Growth & Structured Mentorship"
+    }
+  ],
+  "governance_records": [
+    {
+      "id": "gov_mtxwf31e_77mspsnd",
+      "company_id": "org_ghana_fintech_01",
+      "policy_name": "Anti-Bribery & Corruption Governance Framework",
+      "related_policy_id": null,
+      "last_review_date": "2026-01-10",
+      "next_review_due": "2026-08-10",
+      "reviewed_by": "Internal Audit Committee",
+      "approved_by": "Ignatius Arthur (Head of HR)",
+      "distributed": true,
+      "audit_status": "overdue",
+      "created_at": "2026-09-12T04:42:13.154Z"
+    },
+    {
+      "id": "gov_001",
+      "company_id": "org_ghana_fintech_01",
+      "policy_name": "Code of Conduct & Professional Ethics Manual",
+      "related_policy_id": "pol_seed_001",
+      "last_review_date": "2025-09-15",
+      "next_review_due": "2026-09-15",
+      "reviewed_by": "Kofi Mensah (People Lead)",
+      "approved_by": "Ignatius Arthur (Head of HR)",
+      "distributed": true,
+      "audit_status": "pending",
+      "created_at": "2025-09-15T10:00:00.000Z"
+    },
+    {
+      "id": "gov_002",
+      "company_id": "org_ghana_fintech_01",
+      "policy_name": "Information Security & Data Protection Standard (GDPR/NDPR)",
+      "related_policy_id": "pol_seed_002",
+      "last_review_date": "2025-08-01",
+      "next_review_due": "2026-08-01",
+      "reviewed_by": "Kwame Asante (Head of IT & Security)",
+      "approved_by": "Ignatius Arthur (Head of HR)",
+      "distributed": true,
+      "audit_status": "overdue",
+      "created_at": "2025-08-01T09:30:00.000Z"
+    },
+    {
+      "id": "gov_003",
+      "company_id": "org_ghana_fintech_01",
+      "policy_name": "Remote Work & Distributed Workforce Operational Framework",
+      "related_policy_id": "pol_seed_003",
+      "last_review_date": "2026-05-15",
+      "next_review_due": "2027-05-15",
+      "reviewed_by": "Esi Osei (HR Operations Specialist)",
+      "approved_by": "Ignatius Arthur (Head of HR)",
+      "distributed": true,
+      "audit_status": "completed",
+      "created_at": "2026-05-15T11:00:00.000Z"
+    },
+    {
+      "id": "gov_004",
+      "company_id": "org_ghana_fintech_01",
+      "policy_name": "Anti-Harassment, Equal Opportunity & Whistleblower Charter",
+      "related_policy_id": "pol_seed_004",
+      "last_review_date": "2025-07-20",
+      "next_review_due": "2026-07-20",
+      "reviewed_by": "Legal Advisory & Risk Committee",
+      "approved_by": "Board of Directors & HR Head",
+      "distributed": true,
+      "audit_status": "overdue",
+      "created_at": "2025-07-20T08:00:00.000Z"
+    },
+    {
+      "id": "gov_005",
+      "company_id": "org_ghana_fintech_01",
+      "policy_name": "Workplace Disciplinary Escalation & Performance Improvement Protocol",
+      "related_policy_id": null,
+      "last_review_date": "2026-03-10",
+      "next_review_due": "2026-10-10",
+      "reviewed_by": "Kofi Mensah (People Lead)",
+      "approved_by": "Ignatius Arthur (Head of HR)",
+      "distributed": false,
+      "audit_status": "pending",
+      "created_at": "2026-03-10T14:15:00.000Z"
+    },
+    {
+      "id": "gov_006",
+      "company_id": "org_ghana_fintech_01",
+      "policy_name": "Occupational Health, Safety & Emergency Response SOP",
+      "related_policy_id": null,
+      "last_review_date": "2025-11-01",
+      "next_review_due": "2026-11-01",
+      "reviewed_by": "Facilities & Safety Operations",
+      "approved_by": "Ignatius Arthur (Head of HR)",
+      "distributed": false,
+      "audit_status": "pending",
+      "created_at": "2025-11-01T10:00:00.000Z"
+    }
+  ]
+}

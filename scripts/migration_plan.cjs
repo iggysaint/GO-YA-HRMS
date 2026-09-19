@@ -399,7 +399,6 @@ const companyScopedTables = [
   'engagement_surveys', 'governance_records'
 ];
 
-const orgIds = new Set(db.organizations.map(o => o.id));
 companyScopedTables.forEach(tableName => {
   if (db[tableName] && db[tableName].length > 0) {
     db[tableName].forEach(record => {

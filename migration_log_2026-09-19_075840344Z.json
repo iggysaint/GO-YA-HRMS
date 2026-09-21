@@ -1,0 +1,532 @@
+{
+  "startTime": "2026-09-19T07:58:40.377Z",
+  "phases": {
+    "organizations": {
+      "tableName": "organizations",
+      "total": 4,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table organizations"
+      ]
+    },
+    "user_profiles": {
+      "tableName": "user_profiles",
+      "total": 2,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "column user_profiles.legacy_id does not exist"
+      ]
+    },
+    "organization_members": {
+      "tableName": "organization_members",
+      "total": 2,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "column organization_members.legacy_id does not exist"
+      ]
+    },
+    "departments": {
+      "tableName": "departments",
+      "total": 4,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table departments"
+      ]
+    },
+    "employees": {
+      "tableName": "employees",
+      "total": 6,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table employees"
+      ]
+    },
+    "employee_compensation": {
+      "tableName": "employee_compensation",
+      "total": 7,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table employee_compensation"
+      ]
+    },
+    "job_history": {
+      "tableName": "job_history",
+      "total": 3,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table job_history"
+      ]
+    },
+    "leave_types": {
+      "tableName": "leave_types",
+      "total": 24,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table leave_types"
+      ]
+    },
+    "leave_balances": {
+      "tableName": "leave_balances",
+      "total": 36,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table leave_balances"
+      ]
+    },
+    "leave_requests": {
+      "tableName": "leave_requests",
+      "total": 3,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table leave_requests"
+      ]
+    },
+    "leave_audit_logs": {
+      "tableName": "leave_audit_logs",
+      "total": 1,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table leave_audit_logs"
+      ]
+    },
+    "attendance_records": {
+      "tableName": "attendance_records",
+      "total": 5,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table attendance_records"
+      ]
+    },
+    "daily_attendance_summary": {
+      "tableName": "daily_attendance_summary",
+      "total": 3,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "column daily_attendance_summary.legacy_id does not exist"
+      ]
+    },
+    "onboarding_tasks": {
+      "tableName": "onboarding_tasks",
+      "total": 36,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table onboarding_tasks"
+      ]
+    },
+    "offboarding_tasks": {
+      "tableName": "offboarding_tasks",
+      "total": 0,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table offboarding_tasks"
+      ]
+    },
+    "offboarding_records": {
+      "tableName": "offboarding_records",
+      "total": 0,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table offboarding_records"
+      ]
+    },
+    "documents": {
+      "tableName": "documents",
+      "total": 6,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table documents"
+      ]
+    },
+    "compliance_items": {
+      "tableName": "compliance_items",
+      "total": 9,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table compliance_items"
+      ]
+    },
+    "expense_categories": {
+      "tableName": "expense_categories",
+      "total": 6,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table expense_categories"
+      ]
+    },
+    "expenses": {
+      "tableName": "expenses",
+      "total": 10,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table expenses"
+      ]
+    },
+    "tasks": {
+      "tableName": "tasks",
+      "total": 6,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table tasks"
+      ]
+    },
+    "events": {
+      "tableName": "events",
+      "total": 5,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "Could not find the table 'public.events' in the schema cache"
+      ]
+    },
+    "notifications": {
+      "tableName": "notifications",
+      "total": 21,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table notifications"
+      ]
+    },
+    "email_logs": {
+      "tableName": "email_logs",
+      "total": 14,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "Could not find the table 'public.email_logs' in the schema cache"
+      ]
+    },
+    "chat_channels": {
+      "tableName": "chat_channels",
+      "total": 2,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table chat_channels"
+      ]
+    },
+    "chat_channel_members": {
+      "tableName": "chat_channel_members",
+      "total": 4,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "column chat_channel_members.legacy_id does not exist"
+      ]
+    },
+    "chat_messages": {
+      "tableName": "chat_messages",
+      "total": 5,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table chat_messages"
+      ]
+    },
+    "subscriptions": {
+      "tableName": "subscriptions",
+      "total": 4,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table subscriptions"
+      ]
+    },
+    "invoices": {
+      "tableName": "invoices",
+      "total": 2,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table invoices"
+      ]
+    },
+    "payment_methods": {
+      "tableName": "payment_methods",
+      "total": 2,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table payment_methods"
+      ]
+    },
+    "platform_admins": {
+      "tableName": "platform_admins",
+      "total": 1,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "column platform_admins.legacy_id does not exist"
+      ]
+    },
+    "support_notes": {
+      "tableName": "support_notes",
+      "total": 2,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "column support_notes.legacy_id does not exist"
+      ]
+    },
+    "performance_reviews": {
+      "tableName": "performance_reviews",
+      "total": 6,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table performance_reviews"
+      ]
+    },
+    "pdp_goals": {
+      "tableName": "pdp_goals",
+      "total": 6,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table pdp_goals"
+      ]
+    },
+    "probation_records": {
+      "tableName": "probation_records",
+      "total": 1,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table probation_records"
+      ]
+    },
+    "conduct_incidents": {
+      "tableName": "conduct_incidents",
+      "total": 3,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table conduct_incidents"
+      ]
+    },
+    "conduct_audit_logs": {
+      "tableName": "conduct_audit_logs",
+      "total": 4,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table conduct_audit_logs"
+      ]
+    },
+    "policies": {
+      "tableName": "policies",
+      "total": 4,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table policies"
+      ]
+    },
+    "policy_acknowledgements": {
+      "tableName": "policy_acknowledgements",
+      "total": 24,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table policy_acknowledgements"
+      ]
+    },
+    "engagement_surveys": {
+      "tableName": "engagement_surveys",
+      "total": 2,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table engagement_surveys"
+      ]
+    },
+    "survey_questions": {
+      "tableName": "survey_questions",
+      "total": 8,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table survey_questions"
+      ]
+    },
+    "survey_responses": {
+      "tableName": "survey_responses",
+      "total": 7,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table survey_responses"
+      ]
+    },
+    "survey_answers": {
+      "tableName": "survey_answers",
+      "total": 31,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table survey_answers"
+      ]
+    },
+    "governance_records": {
+      "tableName": "governance_records",
+      "total": 7,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table governance_records"
+      ]
+    },
+    "demo_requests": {
+      "tableName": "demo_requests",
+      "total": 1,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "column demo_requests.legacy_id does not exist"
+      ]
+    },
+    "invites": {
+      "tableName": "invites",
+      "total": 0,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "column invites.legacy_id does not exist"
+      ]
+    },
+    "ai_chat_logs": {
+      "tableName": "ai_chat_logs",
+      "total": 0,
+      "migrated": 0,
+      "skipped": 0,
+      "failed": 0,
+      "errors": [
+        "permission denied for table ai_chat_logs"
+      ]
+    }
+  },
+  "totalRecords": 339,
+  "migratedRecords": 0,
+  "skippedRecords": 0,
+  "failedRecords": 0,
+  "failedFiles": [],
+  "errors": [
+    "permission denied for table organizations",
+    "column user_profiles.legacy_id does not exist",
+    "column organization_members.legacy_id does not exist",
+    "permission denied for table departments",
+    "permission denied for table employees",
+    "permission denied for table employee_compensation",
+    "permission denied for table job_history",
+    "permission denied for table leave_types",
+    "permission denied for table leave_balances",
+    "permission denied for table leave_requests",
+    "permission denied for table leave_audit_logs",
+    "permission denied for table attendance_records",
+    "column daily_attendance_summary.legacy_id does not exist",
+    "permission denied for table onboarding_tasks",
+    "permission denied for table offboarding_tasks",
+    "permission denied for table offboarding_records",
+    "permission denied for table documents",
+    "permission denied for table compliance_items",
+    "permission denied for table expense_categories",
+    "permission denied for table expenses",
+    "permission denied for table tasks",
+    "Could not find the table 'public.events' in the schema cache",
+    "permission denied for table notifications",
+    "Could not find the table 'public.email_logs' in the schema cache",
+    "permission denied for table chat_channels",
+    "column chat_channel_members.legacy_id does not exist",
+    "permission denied for table chat_messages",
+    "permission denied for table subscriptions",
+    "permission denied for table invoices",
+    "permission denied for table payment_methods",
+    "column platform_admins.legacy_id does not exist",
+    "column support_notes.legacy_id does not exist",
+    "permission denied for table performance_reviews",
+    "permission denied for table pdp_goals",
+    "permission denied for table probation_records",
+    "permission denied for table conduct_incidents",
+    "permission denied for table conduct_audit_logs",
+    "permission denied for table policies",
+    "permission denied for table policy_acknowledgements",
+    "permission denied for table engagement_surveys",
+    "permission denied for table survey_questions",
+    "permission denied for table survey_responses",
+    "permission denied for table survey_answers",
+    "permission denied for table governance_records",
+    "column demo_requests.legacy_id does not exist",
+    "column invites.legacy_id does not exist",
+    "permission denied for table ai_chat_logs",
+    "permission denied for table expense_policies"
+  ],
+  "endTime": "2026-09-19T07:58:52.559Z",
+  "duration": 12182
+}

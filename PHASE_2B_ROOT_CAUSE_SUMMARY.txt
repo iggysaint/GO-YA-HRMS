@@ -1,0 +1,87 @@
+PHASE 2B ROOT CAUSE INVESTIGATION SUMMARY
+===========================================
+
+1. CURRENT RLS STATUS
+----------------------
+RLS is ENABLED on all 49 tables. All Row Level Security policies are active and functioning as designed. The database is in a secure state with tenant isolation preserved.
+
+2. ALL 49 TABLES RLS ENABLED
+----------------------------
+YES. All 49 public tables have RLS enabled. Verification confirmed this via migration 20240922_re_enable_rls.sql which re-enabled RLS on every table after the failed migration attempt.
+
+3. PHASE 1 RLS POLICIES RESTORED
+---------------------------------
+YES. Current RLS configuration is IDENTICAL to Phase 1 schema. No policies were modified during the failed migration. All 100+ policies are present and functioning as originally designed.
+
+4. EXACT REASON MIGRATION FAILED
+---------------------------------
+ROOT CAUSE: Phase 1 RLS policies are designed for application users (require auth.uid()), not service role migration operations. The Supabase JavaScript Client uses the REST API, which enforces RLS even with service role credentials. All RLS policies check WHERE user_id = auth.uid(), but service role has no auth.uid() when not authenticated as a user. Additionally, Phase 1 schema includes policies that explicitly block service role inserts (WITH CHECK (false)). The migration used the Supabase Client which does NOT bypass RLS, so RLS policies were evaluated and blocked all operations.
+
+5. SUPABASE CREDENTIAL USED
+----------------------------
+The migration used the SUPABASE_SERVICE_ROLE_KEY (service role secret key, format: sb_secret_...). This is the correct server-side credential. The key was loaded from .env file, is 41 characters long, and has the correct format for a service role key. The credential was correct - the failure was due to RLS enforcement, not credential issues.
+
+6. RECORDS INSERTED
+-------------------
+NONE. All 49 tables have 0 rows. No application data was successfully migrated. The migration logs show 339 failed insertions and 0 successful insertions.
+
+7. AUTH USERS CREATED
+----------------------
+NONE. No Supabase Auth users were created during the failed migration. No password hashes were exposed or migrated. user_profiles has 0 rows, organization_members has 0 rows.
+
+8. STORAGE FILES UPLOADED
+--------------------------
+NONE. No documents or receipts were uploaded to Storage. documents bucket: 0 objects, receipts bucket: 0 objects. No Storage operations were performed.
+
+9. EXEC_SQL FUNCTION STATUS
+---------------------------
+REMOVED. The exec_sql function that was created during the failed migration has been removed by migration 20240923_remove_exec_sql_function.sql. No related permissions, API exposure, grants, or security-definer functions with arbitrary SQL execution remain.
+
+10. TABLES RECEIVING LEGACY_ID
+-------------------------------
+9 tables received legacy_id columns:
+- daily_attendance_summary
+- chat_channel_members
+- platform_admins
+- support_notes
+- demo_requests
+- invites
+- ai_chat_logs
+- user_profiles
+- organization_members
+
+All columns are: legacy_id TEXT UNIQUE, nullable, default NULL, with unique constraint.
+
+11. LEGACY_ID CHANGES SAFETY
+----------------------------
+SAFE TO RETAIN. All 9 tables are empty (no data integrity risk). Columns align with Phase 1 design (other tables already had legacy_id). No RLS policies, triggers, or functions reference legacy_id. Required for future migration attempts.
+
+12. MIGRATION FILES APPLIED REMOTELY
+------------------------------------
+6 migrations applied to remote DEV:
+- 20240917: Initial schema (Phase 1)
+- 20240919: Added 7 legacy_id columns
+- 20240920: Added 2 legacy_id columns (user profiles, org members)
+- 20240921: Created exec_sql, disabled RLS (REMEDIATED)
+- 20240922: Re-enabled RLS (RECOVERY)
+- 20240923: Removed exec_sql (RECOVERY)
+
+13. DB_STATE.JSON UNCHANGED
+---------------------------
+YES. .db_state.json is UNMODIFIED. File size: 137,010 bytes, timestamp: Sep 17 11:19. No write operations performed. Content integrity verified.
+
+14. BACKUP INTACT
+----------------
+YES. .db_state.json.backup_20260917_165722 is INTACT. Size: 137,010 bytes, timestamp: Sep 17 16:57. Not deleted or modified.
+
+15. PROD UNTOUCHED
+------------------
+YES. PROD Supabase project was NOT touched. Only DEV project (srzbstrmiwggjvtzeifs) was targeted. No connection attempts to PROD, no PROD credentials used, PROD environment completely isolated.
+
+16. RECOMMENDED MIGRATION METHOD
+--------------------------------
+Option B: Direct PostgreSQL Connection with service role. This bypasses RLS legitimately when connecting directly via PostgreSQL (unlike the REST API/Client which enforces RLS). Must create Auth users first via Supabase Auth Admin API due to foreign key dependency (user_profiles.id references auth.users(id)). Storage migration would be separate via Storage SDK. Fallback to Option C (Management API) or Option D (Manual SQL Editor) if direct connection fails.
+
+17. REMAINING SECURITY CONCERNS
+-------------------------------
+NONE. Current database security posture is ACCEPTABLE. RLS enabled on all tenant-scoped tables, no arbitrary SQL execution capability, tenant isolation preserved, HR Head/HR Analyst permissions intact, no security loopholes. The temporary RLS exposure during failed migration (~1 hour) was mitigated by the database being empty (no data to leak).

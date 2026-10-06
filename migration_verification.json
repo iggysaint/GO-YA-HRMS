@@ -1,0 +1,199 @@
+{
+  "timestamp": "2026-10-01T20:51:36.769Z",
+  "totalRows": 0,
+  "tableCounts": {
+    "organizations": {
+      "count": 0,
+      "error": ""
+    },
+    "user_profiles": {
+      "count": 0,
+      "error": ""
+    },
+    "organization_members": {
+      "count": 0,
+      "error": ""
+    },
+    "departments": {
+      "count": 0,
+      "error": ""
+    },
+    "employees": {
+      "count": 0,
+      "error": ""
+    },
+    "employee_compensation": {
+      "count": 0,
+      "error": ""
+    },
+    "job_history": {
+      "count": 0,
+      "error": ""
+    },
+    "leave_types": {
+      "count": 0,
+      "error": ""
+    },
+    "leave_balances": {
+      "count": 0,
+      "error": ""
+    },
+    "leave_requests": {
+      "count": 0,
+      "error": ""
+    },
+    "leave_audit_logs": {
+      "count": 0,
+      "error": ""
+    },
+    "attendance_records": {
+      "count": 0,
+      "error": ""
+    },
+    "daily_attendance_summary": {
+      "count": 0,
+      "error": ""
+    },
+    "onboarding_tasks": {
+      "count": 0,
+      "error": ""
+    },
+    "offboarding_tasks": {
+      "count": 0,
+      "error": ""
+    },
+    "offboarding_records": {
+      "count": 0,
+      "error": ""
+    },
+    "documents": {
+      "count": 0,
+      "error": ""
+    },
+    "compliance_items": {
+      "count": 0,
+      "error": ""
+    },
+    "expense_categories": {
+      "count": 0,
+      "error": ""
+    },
+    "expenses": {
+      "count": 0,
+      "error": ""
+    },
+    "tasks": {
+      "count": 0,
+      "error": ""
+    },
+    "company_events": {
+      "count": 0,
+      "error": ""
+    },
+    "notifications": {
+      "count": 0,
+      "error": ""
+    },
+    "email_delivery_logs": {
+      "count": 0,
+      "error": ""
+    },
+    "chat_channels": {
+      "count": 0,
+      "error": ""
+    },
+    "chat_channel_members": {
+      "count": 0,
+      "error": ""
+    },
+    "chat_messages": {
+      "count": 0,
+      "error": ""
+    },
+    "subscriptions": {
+      "count": 0,
+      "error": ""
+    },
+    "invoices": {
+      "count": 0,
+      "error": ""
+    },
+    "payment_methods": {
+      "count": 0,
+      "error": ""
+    },
+    "platform_admins": {
+      "count": 0,
+      "error": ""
+    },
+    "support_notes": {
+      "count": 0,
+      "error": ""
+    },
+    "performance_reviews": {
+      "count": 0,
+      "error": ""
+    },
+    "pdp_goals": {
+      "count": 0,
+      "error": ""
+    },
+    "probation_records": {
+      "count": 0,
+      "error": ""
+    },
+    "conduct_incidents": {
+      "count": 0,
+      "error": ""
+    },
+    "conduct_audit_logs": {
+      "count": 0,
+      "error": ""
+    },
+    "policies": {
+      "count": 0,
+      "error": ""
+    },
+    "policy_acknowledgements": {
+      "count": 0,
+      "error": ""
+    },
+    "engagement_surveys": {
+      "count": 0,
+      "error": ""
+    },
+    "survey_questions": {
+      "count": 0,
+      "error": ""
+    },
+    "survey_responses": {
+      "count": 0,
+      "error": ""
+    },
+    "survey_answers": {
+      "count": 0,
+      "error": ""
+    },
+    "governance_records": {
+      "count": 0,
+      "error": ""
+    },
+    "demo_requests": {
+      "count": 0,
+      "error": ""
+    },
+    "invites": {
+      "count": 0,
+      "error": ""
+    },
+    "ai_chat_logs": {
+      "count": 0,
+      "error": ""
+    },
+    "expense_policies": {
+      "count": 0,
+      "error": ""
+    }
+  },
+  "rlsEnabled": true
+}

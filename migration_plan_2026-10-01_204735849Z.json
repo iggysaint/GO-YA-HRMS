@@ -1,0 +1,314 @@
+{
+  "startTime": "2026-10-01T20:47:35.800Z",
+  "phases": {
+    "organizations": {
+      "tableName": "organizations",
+      "total": 4,
+      "migrated": 4,
+      "failed": 0,
+      "errors": []
+    },
+    "user_profiles": {
+      "tableName": "user_profiles",
+      "total": 2,
+      "migrated": 2,
+      "failed": 0,
+      "errors": []
+    },
+    "organization_members": {
+      "tableName": "organization_members",
+      "total": 2,
+      "migrated": 2,
+      "failed": 0,
+      "errors": []
+    },
+    "departments": {
+      "tableName": "departments",
+      "total": 4,
+      "migrated": 4,
+      "failed": 0,
+      "errors": []
+    },
+    "employees": {
+      "tableName": "employees",
+      "total": 6,
+      "migrated": 6,
+      "failed": 0,
+      "errors": []
+    },
+    "employee_compensation": {
+      "tableName": "employee_compensation",
+      "total": 7,
+      "migrated": 7,
+      "failed": 0,
+      "errors": []
+    },
+    "job_history": {
+      "tableName": "job_history",
+      "total": 3,
+      "migrated": 3,
+      "failed": 0,
+      "errors": []
+    },
+    "leave_types": {
+      "tableName": "leave_types",
+      "total": 24,
+      "migrated": 24,
+      "failed": 0,
+      "errors": []
+    },
+    "leave_balances": {
+      "tableName": "leave_balances",
+      "total": 36,
+      "migrated": 36,
+      "failed": 0,
+      "errors": []
+    },
+    "leave_requests": {
+      "tableName": "leave_requests",
+      "total": 3,
+      "migrated": 3,
+      "failed": 0,
+      "errors": []
+    },
+    "leave_audit_logs": {
+      "tableName": "leave_audit_logs",
+      "total": 1,
+      "migrated": 1,
+      "failed": 0,
+      "errors": []
+    },
+    "attendance_records": {
+      "tableName": "attendance_records",
+      "total": 5,
+      "migrated": 5,
+      "failed": 0,
+      "errors": []
+    },
+    "daily_attendance_summary": {
+      "tableName": "daily_attendance_summary",
+      "total": 3,
+      "migrated": 3,
+      "failed": 0,
+      "errors": []
+    },
+    "onboarding_tasks": {
+      "tableName": "onboarding_tasks",
+      "total": 36,
+      "migrated": 36,
+      "failed": 0,
+      "errors": []
+    },
+    "documents": {
+      "tableName": "documents",
+      "total": 6,
+      "migrated": 6,
+      "failed": 0,
+      "errors": []
+    },
+    "compliance_items": {
+      "tableName": "compliance_items",
+      "total": 9,
+      "migrated": 9,
+      "failed": 0,
+      "errors": []
+    },
+    "expense_categories": {
+      "tableName": "expense_categories",
+      "total": 6,
+      "migrated": 6,
+      "failed": 0,
+      "errors": []
+    },
+    "expenses": {
+      "tableName": "expenses",
+      "total": 10,
+      "migrated": 10,
+      "failed": 0,
+      "errors": []
+    },
+    "tasks": {
+      "tableName": "tasks",
+      "total": 6,
+      "migrated": 6,
+      "failed": 0,
+      "errors": []
+    },
+    "company_events": {
+      "tableName": "company_events",
+      "total": 5,
+      "migrated": 5,
+      "failed": 0,
+      "errors": []
+    },
+    "notifications": {
+      "tableName": "notifications",
+      "total": 21,
+      "migrated": 21,
+      "failed": 0,
+      "errors": []
+    },
+    "email_delivery_logs": {
+      "tableName": "email_delivery_logs",
+      "total": 14,
+      "migrated": 14,
+      "failed": 0,
+      "errors": []
+    },
+    "chat_channels": {
+      "tableName": "chat_channels",
+      "total": 2,
+      "migrated": 2,
+      "failed": 0,
+      "errors": []
+    },
+    "chat_channel_members": {
+      "tableName": "chat_channel_members",
+      "total": 4,
+      "migrated": 4,
+      "failed": 0,
+      "errors": []
+    },
+    "chat_messages": {
+      "tableName": "chat_messages",
+      "total": 5,
+      "migrated": 5,
+      "failed": 0,
+      "errors": []
+    },
+    "subscriptions": {
+      "tableName": "subscriptions",
+      "total": 4,
+      "migrated": 4,
+      "failed": 0,
+      "errors": []
+    },
+    "invoices": {
+      "tableName": "invoices",
+      "total": 2,
+      "migrated": 2,
+      "failed": 0,
+      "errors": []
+    },
+    "payment_methods": {
+      "tableName": "payment_methods",
+      "total": 2,
+      "migrated": 2,
+      "failed": 0,
+      "errors": []
+    },
+    "platform_admins": {
+      "tableName": "platform_admins",
+      "total": 1,
+      "migrated": 1,
+      "failed": 0,
+      "errors": []
+    },
+    "support_notes": {
+      "tableName": "support_notes",
+      "total": 2,
+      "migrated": 2,
+      "failed": 0,
+      "errors": []
+    },
+    "performance_reviews": {
+      "tableName": "performance_reviews",
+      "total": 6,
+      "migrated": 6,
+      "failed": 0,
+      "errors": []
+    },
+    "pdp_goals": {
+      "tableName": "pdp_goals",
+      "total": 6,
+      "migrated": 6,
+      "failed": 0,
+      "errors": []
+    },
+    "probation_records": {
+      "tableName": "probation_records",
+      "total": 1,
+      "migrated": 1,
+      "failed": 0,
+      "errors": []
+    },
+    "conduct_incidents": {
+      "tableName": "conduct_incidents",
+      "total": 3,
+      "migrated": 3,
+      "failed": 0,
+      "errors": []
+    },
+    "conduct_audit_logs": {
+      "tableName": "conduct_audit_logs",
+      "total": 4,
+      "migrated": 4,
+      "failed": 0,
+      "errors": []
+    },
+    "policies": {
+      "tableName": "policies",
+      "total": 4,
+      "migrated": 4,
+      "failed": 0,
+      "errors": []
+    },
+    "policy_acknowledgements": {
+      "tableName": "policy_acknowledgements",
+      "total": 24,
+      "migrated": 24,
+      "failed": 0,
+      "errors": []
+    },
+    "engagement_surveys": {
+      "tableName": "engagement_surveys",
+      "total": 2,
+      "migrated": 2,
+      "failed": 0,
+      "errors": []
+    },
+    "survey_questions": {
+      "tableName": "survey_questions",
+      "total": 8,
+      "migrated": 8,
+      "failed": 0,
+      "errors": []
+    },
+    "survey_responses": {
+      "tableName": "survey_responses",
+      "total": 7,
+      "migrated": 7,
+      "failed": 0,
+      "errors": []
+    },
+    "survey_answers": {
+      "tableName": "survey_answers",
+      "total": 31,
+      "migrated": 31,
+      "failed": 0,
+      "errors": []
+    },
+    "governance_records": {
+      "tableName": "governance_records",
+      "total": 7,
+      "migrated": 7,
+      "failed": 0,
+      "errors": []
+    },
+    "demo_requests": {
+      "tableName": "demo_requests",
+      "total": 1,
+      "migrated": 1,
+      "failed": 0,
+      "errors": []
+    }
+  },
+  "totalRecords": 339,
+  "migratedRecords": 340,
+  "failedRecords": 0,
+  "errors": [],
+  "authUsers": [],
+  "storageUploads": [],
+  "endTime": "2026-10-01T20:47:35.849Z",
+  "duration": 49
+}

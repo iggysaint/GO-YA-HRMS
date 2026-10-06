@@ -3,6 +3,9 @@ import path from 'path';
 import fs from 'fs';
 import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI } from '@google/genai';
+import { supabase } from './src/lib/supabase';
+import { verifyAuthToken, getUserProfile, getOrganizationMembership, getUserMemberships, getOrganization, getUserOrganizations } from './src/lib/auth';
+import { getOrganizationById, getDepartmentsByOrganization, getEmployeesByOrganization, getEmployeesWithDepartments, getEmployeeById, getEmployeeWithDepartment } from './src/lib/data';
 import {
   Organization,
   OrganizationMember,
@@ -3288,7 +3291,7 @@ interface AuthenticatedRequest extends Request {
   auth?: AuthContextPayload;
 }
 
-function requireAuth(req: AuthenticatedRequest, res: Response, next: NextFunction) {
+async function requireAuth(req: AuthenticatedRequest, res: Response, next: NextFunction) {
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
     return res.status(401).json({ error: 'Unauthorized: Missing or invalid token' });
@@ -3300,21 +3303,23 @@ function requireAuth(req: AuthenticatedRequest, res: Response, next: NextFunctio
     return res.status(401).json({ error: 'Unauthorized: Session expired or invalid' });
   }
 
-  // Verify membership still exists in db
-  const membership = db.organization_members.find(
-    (m) => m.user_id === payload.user_id && m.organization_id === payload.company_id
-  );
+  // Verify membership still exists in Supabase
+  try {
+    const membership = await getOrganizationMembership(payload.user_id, payload.company_id);
+    if (!membership) {
+      return res.status(403).json({ error: 'Forbidden: User is not a member of this workspace' });
+    }
 
-  if (!membership) {
-    return res.status(403).json({ error: 'Forbidden: User is not a member of this workspace' });
+    payload.role = membership.role;
+    req.auth = payload;
+    next();
+  } catch (err) {
+    console.error('Error verifying membership:', err);
+    return res.status(500).json({ error: 'Internal server error' });
   }
-
-  payload.role = membership.role;
-  req.auth = payload;
-  next();
 }
 
-function getAuth(req: Request): AuthContextPayload | null {
+async function getAuth(req: Request): AuthContextPayload | null {
   const authReq = req as AuthenticatedRequest;
   if (authReq.auth) return authReq.auth;
   const authHeader = req.headers.authorization;
@@ -3322,6 +3327,8 @@ function getAuth(req: Request): AuthContextPayload | null {
   const token = authHeader.substring(7);
   const payload = decodeToken(token);
   if (!payload) return null;
+  // TODO: Migrate to Supabase membership check
+  // For now, still using JSON for getAuth to avoid breaking all endpoints
   const membership = db.organization_members.find(
     (m) => m.user_id === payload.user_id && m.organization_id === payload.company_id
   );
@@ -3470,95 +3477,125 @@ app.post('/api/auth/signup', (req, res) => {
 });
 
 // Login
-app.post('/api/auth/login', (req, res) => {
+app.post('/api/auth/login', async (req, res) => {
   const { email, password, organization_id } = req.body;
 
   if (!email || !password) {
     return res.status(400).json({ error: 'Email and password are required' });
   }
 
-  const user = db.users.find((u) => u.email.toLowerCase() === email.toLowerCase().trim());
-  if (!user || user.password_hash !== password) {
-    return res.status(401).json({ error: 'Invalid email or password' });
+  try {
+    // Authenticate with Supabase Auth
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: email.trim().toLowerCase(),
+      password,
+    });
+
+    if (error || !data.user) {
+      return res.status(401).json({ error: 'Invalid email or password' });
+    }
+
+    const userId = data.user.id;
+    const userEmail = data.user.email || '';
+
+    // Get user's organization memberships from Supabase
+    const memberships = await getUserMemberships(userId);
+    if (memberships.length === 0) {
+      return res.status(403).json({ error: 'User does not belong to any workspace. Please sign up or accept an invite.' });
+    }
+
+    let targetMembership = organization_id
+      ? memberships.find((m) => m.organization_id === organization_id)
+      : memberships[0];
+
+    if (!targetMembership) {
+      targetMembership = memberships[0];
+    }
+
+    // Get organization details from Supabase
+    const org = await getOrganization(targetMembership.organization_id);
+    if (!org) {
+      return res.status(404).json({ error: 'Workspace not found' });
+    }
+
+    // Get all available workspaces for the user
+    const available_workspaces = await getUserOrganizations(userId);
+
+    // Create application token (not Supabase token)
+    const token = createToken({
+      user_id: userId,
+      company_id: org.id,
+      role: targetMembership.role,
+      email: userEmail,
+    });
+
+    // Get platform admin status (still from JSON for now)
+    const is_platform_admin = (db.platform_admins || []).some((pa) => pa.user_id === userId);
+    // Get subscription (still from JSON for now)
+    const subscription = (db.subscriptions || []).find((s) => s.company_id === org.id) || null;
+
+    res.json({
+      token,
+      user: { 
+        id: userId, 
+        email: userEmail, 
+        email_verified: data.user.email_confirmed_at !== null, 
+        created_at: data.user.created_at 
+      },
+      organization: org,
+      role: targetMembership.role,
+      available_workspaces,
+      is_platform_admin,
+      subscription,
+    });
+  } catch (err) {
+    console.error('Login error:', err);
+    return res.status(500).json({ error: 'Internal server error during login' });
   }
-
-  const memberships = db.organization_members.filter((m) => m.user_id === user.id);
-  if (memberships.length === 0) {
-    return res.status(403).json({ error: 'User does not belong to any workspace. Please sign up or accept an invite.' });
-  }
-
-  let targetMembership = organization_id
-    ? memberships.find((m) => m.organization_id === organization_id)
-    : memberships[0];
-
-  if (!targetMembership) {
-    targetMembership = memberships[0];
-  }
-
-  const org = db.organizations.find((o) => o.id === targetMembership.organization_id);
-  if (!org) {
-    return res.status(404).json({ error: 'Workspace not found' });
-  }
-
-  const available_workspaces = memberships.map((m) => {
-    const o = db.organizations.find((orgItem) => orgItem.id === m.organization_id);
-    return {
-      organization: o!,
-      role: m.role,
-    };
-  }).filter((w) => w.organization != null);
-
-  const token = createToken({
-    user_id: user.id,
-    company_id: org.id,
-    role: targetMembership.role,
-    email: user.email,
-  });
-
-  const is_platform_admin = (db.platform_admins || []).some((pa) => pa.user_id === user.id);
-  const subscription = (db.subscriptions || []).find((s) => s.company_id === org.id) || null;
-
-  res.json({
-    token,
-    user: { id: user.id, email: user.email, email_verified: user.email_verified, created_at: user.created_at },
-    organization: org,
-    role: targetMembership.role,
-    available_workspaces,
-    is_platform_admin,
-    subscription,
-  });
 });
 
 // Get Current User & Workspace Session
-app.get('/api/auth/me', requireAuth, (req: AuthenticatedRequest, res) => {
+app.get('/api/auth/me', requireAuth, async (req: AuthenticatedRequest, res) => {
   const auth = req.auth!;
-  const user = db.users.find((u) => u.id === auth.user_id);
-  const org = db.organizations.find((o) => o.id === auth.company_id);
+  
+  try {
+    // Get user profile from Supabase
+    const userProfile = await getUserProfile(auth.user_id);
+    if (!userProfile) {
+      return res.status(404).json({ error: 'Session user not found' });
+    }
 
-  if (!user || !org) {
-    return res.status(404).json({ error: 'Session user or workspace not found' });
+    // Get organization from Supabase
+    const org = await getOrganization(auth.company_id);
+    if (!org) {
+      return res.status(404).json({ error: 'Session workspace not found' });
+    }
+
+    // Get all available workspaces for the user
+    const available_workspaces = await getUserOrganizations(auth.user_id);
+
+    // Get platform admin status (still from JSON for now)
+    const is_platform_admin = (db.platform_admins || []).some((pa) => pa.user_id === auth.user_id);
+    // Get subscription (still from JSON for now)
+    const subscription = (db.subscriptions || []).find((s) => s.company_id === org.id) || null;
+
+    res.json({
+      user: { 
+        id: userProfile.id, 
+        email: userProfile.email, 
+        email_verified: userProfile.email !== '', // Simplified check
+        created_at: userProfile.created_at 
+      },
+      organization: org,
+      role: auth.role,
+      available_workspaces,
+      is_platform_admin,
+      subscription,
+    });
+  } catch (err) {
+    console.error('Error getting user session:', err);
+    return res.status(500).json({ error: 'Internal server error' });
   }
-
-  const memberships = db.organization_members.filter((m) => m.user_id === user.id);
-  const available_workspaces = memberships.map((m) => {
-    const o = db.organizations.find((orgItem) => orgItem.id === m.organization_id);
-    return {
-      organization: o!,
-      role: m.role,
-    };
-  }).filter((w) => w.organization != null);
-
-  const is_platform_admin = (db.platform_admins || []).some((pa) => pa.user_id === user.id);
-  const subscription = (db.subscriptions || []).find((s) => s.company_id === org.id) || null;
-
-  res.json({
-    user: { id: user.id, email: user.email, email_verified: user.email_verified, created_at: user.created_at },
-    organization: org,
-    role: auth.role,
-    available_workspaces,
-    is_platform_admin,
-    subscription,
-  });
 });
 
 // Switch Workspace
@@ -3782,35 +3819,54 @@ app.post('/api/invites/accept', (req, res) => {
   });
 });
 
-app.get('/api/workspace/members', requireAuth, (req: AuthenticatedRequest, res) => {
+app.get('/api/workspace/members', requireAuth, async (req: AuthenticatedRequest, res) => {
   const auth = req.auth!;
-  const members = db.organization_members
-    .filter((m) => m.organization_id === auth.company_id)
-    .map((m) => {
-      const u = db.users.find((user) => user.id === m.user_id);
-      return {
-        user_id: m.user_id,
-        email: u?.email || 'unknown',
-        role: m.role,
-        is_current_user: m.user_id === auth.user_id,
-      };
-    });
+  
+  try {
+    // Get organization members from Supabase
+    const { data: members, error } = await supabase
+      .from('organization_members')
+      .select('user_id, role, user_profiles(email)')
+      .eq('organization_id', auth.company_id);
+    
+    if (error) {
+      console.error('Error getting workspace members:', error);
+      return res.status(500).json({ error: 'Internal server error' });
+    }
 
-  const pending_invites = db.invites.filter(
-    (i) => i.organization_id === auth.company_id && i.status === 'pending'
-  );
+    const memberList = (members || []).map((m: any) => ({
+      user_id: m.user_id,
+      email: m.user_profiles?.email || 'unknown',
+      role: m.role,
+      is_current_user: m.user_id === auth.user_id,
+    }));
 
-  res.json({ members, pending_invites });
+    // Pending invites still from JSON (not migrated yet)
+    const pending_invites = db.invites.filter(
+      (i) => i.organization_id === auth.company_id && i.status === 'pending'
+    );
+
+    res.json({ members: memberList, pending_invites });
+  } catch (err) {
+    console.error('Error getting workspace members:', err);
+    return res.status(500).json({ error: 'Internal server error' });
+  }
 });
 
 // ==========================================
 // 3. Departments Management
 // ==========================================
 
-app.get('/api/departments', requireAuth, (req: AuthenticatedRequest, res) => {
+app.get('/api/departments', requireAuth, async (req: AuthenticatedRequest, res) => {
   const auth = req.auth!;
-  const departments = db.departments.filter((d) => d.company_id === auth.company_id);
-  res.json(departments);
+  
+  try {
+    const departments = await getDepartmentsByOrganization(auth.company_id);
+    res.json(departments);
+  } catch (err) {
+    console.error('Error getting departments:', err);
+    return res.status(500).json({ error: 'Internal server error' });
+  }
 });
 
 app.post('/api/departments', requireAuth, (req: AuthenticatedRequest, res) => {
@@ -3890,6 +3946,11 @@ app.delete('/api/departments/:id', requireAuth, (req: AuthenticatedRequest, res)
 // ==========================================
 // 4. Employees & Milestone 2 Auto-Provisioning
 // ==========================================
+
+// NOTE: Employees endpoint still uses JSON for now because it depends on:
+// - onboarding_tasks (not migrated yet)
+// - employee_compensation (not migrated yet)
+// These will be migrated in a later increment
 
 app.get('/api/employees', requireAuth, (req: AuthenticatedRequest, res) => {
   const auth = req.auth!;

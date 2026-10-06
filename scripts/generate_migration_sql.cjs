@@ -28,6 +28,12 @@ if (!SUPABASE_URL.includes(EXPECTED_PROJECT_ID)) {
 const dbPath = path.join(__dirname, '..', '.db_state.json');
 const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
 
+const authMappingPath = path.join(__dirname, '..', 'auth_user_mapping.json');
+let authUserIds = {};
+if (fs.existsSync(authMappingPath)) {
+  authUserIds = JSON.parse(fs.readFileSync(authMappingPath, 'utf8'));
+}
+
 console.log('='.repeat(80));
 console.log('GO-YA HRMS Phase 2B: Data Migration to Supabase DEV');
 console.log('='.repeat(80));
@@ -55,11 +61,32 @@ Object.keys(db).forEach(key => {
   if (Array.isArray(db[key])) {
     db[key].forEach(record => {
       if (record.id) {
-        idMapping[record.id] = legacyIdToUUID(record.id);
+        // For user_profiles, use the actual Auth user ID if available
+        if (authUserIds[record.id]) {
+          idMapping[record.id] = authUserIds[record.id];
+        } else {
+          idMapping[record.id] = legacyIdToUUID(record.id);
+        }
       }
     });
   }
 });
+
+// Email to UUID mapping for performed_by, uploaded_by, reviewed_by, etc. fields
+const emailToUUID = {};
+if (db.users) {
+  db.users.forEach(user => {
+    if (user.email && user.id) {
+      emailToUUID[user.email] = idMapping[user.id];
+    }
+  });
+}
+
+// Legacy task user ID mapping (usr_001 -> hr_head, usr_002 -> hr_analyst)
+const legacyTaskUserMapping = {
+  'usr_001': 'usr_hr_head_01',
+  'usr_002': 'usr_hr_analyst_01'
+};
 
 console.log(`ID Mapping Generated: ${Object.keys(idMapping).length} IDs mapped`);
 console.log();
@@ -67,10 +94,39 @@ console.log();
 // Helper to escape SQL values
 function escapeSQL(value) {
   if (value === null || value === undefined) return 'NULL';
-  if (typeof value === 'string') return `'${value.replace(/'/g, "''")}'`;
+  if (typeof value === 'string') {
+    // Check if this is an email that should be mapped to UUID
+    if (emailToUUID[value]) {
+      return `'${emailToUUID[value]}'`;
+    }
+    // Check if this is a legacy task user ID that should be mapped
+    if (legacyTaskUserMapping[value]) {
+      const mappedId = legacyTaskUserMapping[value];
+      if (idMapping[mappedId]) {
+        return `'${idMapping[mappedId]}'`;
+      }
+    }
+    // Check if this is a legacy ID that should be mapped to UUID
+    if (idMapping[value]) {
+      return `'${idMapping[value]}'`;
+    }
+    return `'${value.replace(/'/g, "''")}'`;
+  }
   if (typeof value === 'boolean') return value ? 'TRUE' : 'FALSE';
   if (typeof value === 'number') return String(value);
-  if (typeof value === 'object') return `'${JSON.stringify(value).replace(/'/g, "''")}'`;
+  if (typeof value === 'object') {
+    // Handle arrays for PostgreSQL
+    if (Array.isArray(value)) {
+      const escapedArray = value.map(v => {
+        if (typeof v === 'string') {
+          return `"${v.replace(/"/g, '\\"')}"`;
+        }
+        return String(v);
+      });
+      return `'{${escapedArray.join(',')}}'`;
+    }
+    return `'${JSON.stringify(value).replace(/'/g, "''")}'`;
+  }
   return 'NULL';
 }
 
@@ -109,9 +165,9 @@ const migrationOrder = [
   { table: 'leave_audit_logs', data: db.leave_audit_logs, columns: ['id', 'legacy_id', 'company_id', 'employee_id', 'employee_name', 'leave_request_id', 'leave_type_id', 'leave_type_name', 'action', 'days_changed', 'previous_balance', 'new_balance', 'performed_by', 'timestamp', 'notes'] },
   { table: 'attendance_records', data: db.attendance_records, columns: ['id', 'legacy_id', 'employee_id', 'company_id', 'date', 'status', 'notes', 'created_at', 'updated_at'] },
   { table: 'daily_attendance_summary', data: db.daily_attendance_summary, columns: ['company_id', 'date', 'present_count', 'late_count', 'absent_count', 'on_leave_count', 'not_logged_count', 'created_at', 'updated_at', 'legacy_id'] },
-  { table: 'onboarding_tasks', data: db.onboarding_tasks, columns: ['id', 'legacy_id', 'employee_id', 'company_id', 'task', 'category', 'status', 'due_date', 'completed_at', 'completed_by', 'notes', 'created_at'] },
-  { table: 'offboarding_tasks', data: db.offboarding_tasks, columns: ['id', 'legacy_id', 'employee_id', 'company_id', 'task', 'category', 'status', 'due_date', 'completed_at', 'completed_by', 'notes', 'created_at'] },
-  { table: 'offboarding_records', data: db.offboarding_records, columns: ['id', 'legacy_id', 'employee_id', 'company_id', 'reason', 'last_working_day', 'exit_interview_notes', 'final_leave_balance_days', 'final_settlement_amount', 'currency', 'settlement_approved_by', 'settlement_approved_at', 'status', 'created_at', 'updated_at'] },
+  { table: 'onboarding_tasks', data: db.onboarding_tasks, columns: ['id', 'legacy_id', 'employee_id', 'company_id', 'task', 'category', 'status', 'due_date', 'completed_at', 'notes', 'created_at'] },
+  { table: 'offboarding_tasks', data: db.offboarding_tasks, columns: ['id', 'legacy_id', 'employee_id', 'company_id', 'task', 'category', 'status', 'due_date', 'completed_at', 'notes', 'created_at'] },
+  { table: 'offboarding_records', data: db.offboarding_records, columns: ['id', 'legacy_id', 'employee_id', 'company_id', 'reason', 'last_working_day', 'exit_interview_notes', 'final_leave_balance_days', 'final_settlement_amount', 'currency', 'status', 'created_at', 'updated_at'] },
   { table: 'documents', data: db.documents, columns: ['id', 'legacy_id', 'company_id', 'employee_id', 'type', 'file_ref', 'file_name', 'file_size', 'expiry_date', 'uploaded_at', 'uploaded_by', 'notes', 'created_at', 'updated_at'] },
   { table: 'compliance_items', data: db.compliance_items, columns: ['id', 'legacy_id', 'company_id', 'category', 'related_employee_id', 'related_employee_name', 'title', 'deadline', 'status', 'notes', 'document_id', 'created_at', 'updated_at'] },
   { table: 'expense_categories', data: db.expense_categories, columns: ['id', 'legacy_id', 'company_id', 'name', 'created_at'] },
